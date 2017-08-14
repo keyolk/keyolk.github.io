@@ -26,3 +26,4 @@ googleAnalytics = "UA-77710672-1"
   search = true
   editURL = "http://prose.io/#keyolk/keyolk.github.io/edit/hugo/content/"
   menu = [ "workspace", "container", "system", "cloud", "architecture", "security", "language", "algorithm" ]
+  themeVariant = "blue"
