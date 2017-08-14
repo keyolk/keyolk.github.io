@@ -1,28 +1,29 @@
 language: go
 
 go:
-  - "1.7.1"
+  - "1.7"
 
 env:
   global:
     - SSH_KEY="id_rsa"
-    - GIT_NAME="keyolk"
+    - GIT_NAME="Chanhun Jeong"
     - GIT_EMAIL="keyolk@gmail.com"
     - SOURCE_DIR="public"
-    - DEPLOY_BRANCH="hugo"
+    - BUILD_BRANCH="hugo"
+    - DEPLOY_BRANCH="master"
 
-before_script:
-  - git clone --branch v2 https://github.com/go-yaml/yaml $GOPATH/src/gopkg.in/yaml.v2
+install:
   - go get -u -v github.com/spf13/hugo
 
 script:
-  - git clone https://github.com/matcornic/hugo-theme-learn themes/hugo-theme-learn
+  - git submodule init
   - hugo
 
 deploy:
-  provider: pages
-  skip_cleanup: true
-  local_dir: public
-  github_token: $GITHUB_TOKEN
-  on:
-    branch: master
+  - provider: pages
+    edge: true
+    github_token: $(GITHUB_TOKEN)
+    local_dir: public
+    skip_cleanup: true
+    on:
+      branch: master
