@@ -1,0 +1,22 @@
++++
+title = "keyolk's page"
++++
+
+## About Me
+Working History
+
+- 2017.01-       : PaaS/MultiCloud R&D
+- 2015.07-2016.12: Cloud/Container Architecture R&D
+- 2013.01-2014.12: DRM/CAS Development
+- 2012.07-2012.12: Web Application Development
+
+Current Interests
+
+- Cloud Native.
+- Container Architecture.
+- Deploy Automation.
+- Identity&Access Management.
+
+## Links
+* [Linkedin](https://linkedin.com/in/keyolk)
+* [Github](https://github.com/keyolk)
