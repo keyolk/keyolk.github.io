@@ -23,5 +23,4 @@ deploy:
     github_token: $(GITHUB_TOKEN)
     local_dir: public
     skip_cleanup: true
-    on:
-      branch: master
+    target_branch: master
