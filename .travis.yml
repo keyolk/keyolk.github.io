@@ -16,7 +16,7 @@ install:
   - go get -u -v github.com/spf13/hugo
 
 script:
-  - git submodule init
+  - git submodule update --init --recursive
   - hugo
 
 deploy:
