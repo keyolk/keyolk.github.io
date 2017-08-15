@@ -15,7 +15,9 @@ Current Interests
 
 - Cloud Native.
 - Container Architecture.
-- Deploy Automation.
+- CI/CD.
+- Logging.
+- Monitoring.
 - Identity&Access Management.
 
 ## Links
