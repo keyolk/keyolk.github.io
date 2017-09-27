@@ -13,11 +13,9 @@ env:
 
 install:
   - go get -u -v github.com/spf13/hugo
-  - npm install hugo-lunr
 
 script:
   - git submodule update --init --recursive
-  - lunr-hugo -i "content/**/*.md" -o static/json/search.json -l toml
   - hugo
 
 deploy:

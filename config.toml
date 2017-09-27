@@ -5,7 +5,6 @@ publishDir = "public"
 title = "keyolk's page"
 canonifyURLs = true
 languageCode = "ko-KR"
-
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
 theme = "hugo-theme-learn"
@@ -19,10 +18,17 @@ googleAnalytics = "UA-77710672-1"
   tag = "tags"
 
 [params]
-  description = "hugo contents for keyolk.github.io"
-  author = "keyolk"
-  showVisitedLinks = false
-  search = true
   editURL = "http://prose.io/#keyolk/keyolk.github.io/edit/hugo/content/"
-  menu = [ "workspace", "container", "system", "cloud", "architecture", "security", "language", "algorithm" ]
+  author = "keyolk"
+  description = "hugo contents for keyolk.github.io"
+  showVisitedLinks = false
+  disableSearch = false
+  disableAssetsBusting = false
+  disableInlineCopyToClipBoard = false
+  disableShortcutsTitle = false
+  disableLanguageSwitchingButton = false
+  ordersectionsby = "weight"
   themeVariant = "blue"
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON" ]
