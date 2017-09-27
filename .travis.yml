@@ -16,6 +16,7 @@ install:
 
 script:
   - git submodule update --init --recursive
+  - bin/lunr-hugo -i "content/**/*.md" -o static/json/search.json -l toml
   - hugo
 
 deploy:

@@ -5,7 +5,6 @@ publishDir = "public"
 title = "keyolk's page"
 canonifyURLs = true
 languageCode = "ko-KR"
-hasCJKLanguage = true
 
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
