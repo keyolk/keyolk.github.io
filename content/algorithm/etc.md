@@ -1,7 +1,7 @@
 +++
 title  = "etc"
 toc    = true
-weight = 9
+weight = 10
 +++
 
 ## Intro
