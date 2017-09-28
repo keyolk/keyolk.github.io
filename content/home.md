@@ -19,7 +19,3 @@ Current Interests
 - Logging.
 - Monitoring.
 - Identity&Access Management.
-
-## Links
-* [Linkedin](https://linkedin.com/in/keyolk)
-* [Github](https://github.com/keyolk)
