@@ -11,6 +11,9 @@ theme = "hugo-theme-learn"
 disqusShortname = "keyolk"
 googleAnalytics = "UA-77710672-1"
 
+[taxonomies]
+  tag = "tags"
+
 [params]
   editURL = "http://prose.io/#keyolk/keyolk.github.io/edit/hugo/content/"
   author = "keyolk"
