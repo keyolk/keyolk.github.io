@@ -2,8 +2,6 @@
 title  = "datastructure"
 toc    = true
 weight = 1
-prev   = "/algorithm/mathematics"
-next   = "/algorithm/algorithm_pattern"
 +++
 
 ## Intro
