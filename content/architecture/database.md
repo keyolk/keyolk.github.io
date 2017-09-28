@@ -4,16 +4,20 @@ toc    = true
 weight = 1
 +++
 
-## relational database
+## Relational Database
+#### ACID
 - Atomicity
 - Consistency
 - Isolation
 - Durability
 
-## nosql
+## NoSQL
+#### CAP
 - Consistency
 - Availability
 - Partition tolerance
+
+![img](../database.files/nosql_cap.png)
 
 각각 조합에 대한 예: \
 
@@ -21,16 +25,20 @@ weight = 1
 - CA: Aster Data, Greenplum
 - CP: BigTable, Hbase, MongoDB, Redis, MemcacheDB
 
+
+#### BASE
 - Basically Available
 - Soft-state
 - Eventually consistency
 
-## data model
+## Data Model
 - relational
 - key-value
 - column-oriented/tabular
 - document-oriented
 
-## data type
+## Data Type
 - scalar: number, string, etc
 - multi-valued: sets
+
+{{%attachments title="Related files" pattern=".*(png)"/%}}
