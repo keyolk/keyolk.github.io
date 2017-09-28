@@ -2,8 +2,6 @@
 title  = "algorithm pattern"
 toc    = true
 weight = 2
-prev   = "/algorithm/datastructure"
-next   = "/algorithm/sorting"
 +++
 
 ## Intro
