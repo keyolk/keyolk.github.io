@@ -6,6 +6,8 @@ title = "keyolk's page"
 canonifyURLs = true
 languageCode = "ko-KR"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+defaultContentLanguage = "ko"
+defaultContentLanguageInSubdir= true
 
 theme = "hugo-theme-learn"
 disqusShortname = "keyolk"
@@ -33,3 +35,14 @@ weight = 10
 name = "<i class='fa fa-linkedin'></i> LinkedIn"
 url = "https://linkedin.com/in/keyolk"
 weight = 11
+
+[Languages]
+[Languages.ko]
+title = "Documentation for Hugo Learn Theme"
+weight = 1
+languageName = "Korean"
+
+#[Languages.en]
+#title = "Documentation for Hugo Learn Theme"
+#weight = 2
+#languageName = "English"
