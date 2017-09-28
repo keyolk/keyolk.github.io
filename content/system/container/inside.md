@@ -2,8 +2,6 @@
 title  = "inside"
 toc    = true
 weight = 4
-prev   = "/container/security"
-next   = "/container/kubernetes"
 +++
 
 ## Linux Features

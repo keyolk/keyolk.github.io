@@ -2,8 +2,6 @@
 title  = "blog"
 toc    = true
 weight = 2
-prev   = "/workspace/office"
-next   = "/workspace"
 +++
 
 ## Intro

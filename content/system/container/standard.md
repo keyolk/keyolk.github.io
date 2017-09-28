@@ -2,8 +2,6 @@
 title  = "standard"
 toc    = true
 weight = 0
-prev   = "/container"
-next   = "/container/network"
 +++
 
 ## Engine

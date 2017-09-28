@@ -2,8 +2,6 @@
 title  = "network"
 toc    = true
 weight = 2
-prev   = "/container/standard"
-next   = "/container/security"
 +++
 
 ## Contaienr Network Model

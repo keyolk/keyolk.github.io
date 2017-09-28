@@ -2,8 +2,6 @@
 title   = "Algorithm"
 chapter = true
 icon    = "<b>-</b>"
-prev   = "/algorithm/etc"
-next   = "/algorithm/mathematics"
 +++
 
 # Algorithm

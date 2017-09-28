@@ -1,9 +1,6 @@
-+++
-title  = "office"
++++ title  = "office"
 toc    = true
 weight = 1
-prev   = "/workspace/personal"
-next   = "/workspace/blog"
 +++
 
 ## Intro

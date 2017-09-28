@@ -2,8 +2,6 @@
 title  = "kubernetes"
 toc    = true
 weight = 10
-prev   = "/container/inside"
-next   = "/container"
 +++
 
 ## Intro

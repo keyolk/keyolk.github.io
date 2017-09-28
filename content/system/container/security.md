@@ -2,8 +2,6 @@
 title  = "security"
 toc    = true
 weight = 3
-prev   = "/container/network"
-next   = "/container/inside"
 +++
 
 ## Compliance

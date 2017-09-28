@@ -2,8 +2,6 @@
 title  = "personal"
 toc    = true
 weight = 0
-prev   = "/workspace"
-next   = "/workspace/office"
 tags = [ "terminal", "gnome" ]
 +++
 

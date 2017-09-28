@@ -2,8 +2,6 @@
 title   = "Workspace"
 chapter = true
 icon    = "<b>-</b>"
-prev   = "/workspace/office"
-next   = "/workspace/personal"
 +++
 
 # Workspace

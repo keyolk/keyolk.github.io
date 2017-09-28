@@ -2,8 +2,6 @@
 title   = "Container"
 chapter = true
 icon    = "<b>-</b>"
-prev    = "/container/kubernetes"
-next    = "/container/standard"
 +++
 
 # Container
