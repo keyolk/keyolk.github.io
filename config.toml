@@ -39,11 +39,6 @@ weight = 11
 
 [Languages]
 [Languages.ko]
-title = "Documentation for Hugo Learn Theme"
+title = "Personal Documentation"
 weight = 1
 languageName = "Korean"
-
-#[Languages.en]
-#title = "Documentation for Hugo Learn Theme"
-#weight = 2
-#languageName = "English"
