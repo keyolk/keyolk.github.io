@@ -32,3 +32,14 @@ googleAnalytics = "UA-77710672-1"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON" ]
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-github'></i> GitHub"
+identifier = "ds"
+url = "https://github.com/keyolk"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fa fa-linkedin'></i> LinkedIn"
+url = "https://linkedin.com/in/keyolk"
+weight = 11
