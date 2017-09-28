@@ -7,6 +7,9 @@ weight = 0
 Linux 관련 feature에 대한 이해를 위한 정리.
 Filesystem, Resource Isolation, Event Trigger, Module 등.
 
+## Contents
+{{% children showhidden="true" %}}
+
 - [namespace](/system/namespace)
 - [cgroup](/system/cgroup)
 - capabilities
