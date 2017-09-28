@@ -2,8 +2,6 @@
 title  = "tree"
 toc    = true
 weight = 4
-prev   = "/algorithm/sorting"
-next   = "/algorithm/graph"
 +++
 
 ## Intro
