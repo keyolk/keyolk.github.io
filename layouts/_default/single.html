@@ -8,7 +8,9 @@
 {{ .Content }}
 <footer class=" footline">
   <i class='fa fa-user'></i> <a href="mailto:{{ .GitInfo.AuthorEmail }}">{{ .GitInfo.AuthorName }}</a>
-  <i class='fa fa-calendar'></i> {{ .GitInfo.AuthorDate }}
+  {{ with .GitInfo.AuthorDate }}
+  <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}
+  {{ end }}
 </footer>
 {{ partial "adsense.html" . }}
 {{ partial "disqus.html" . }}
