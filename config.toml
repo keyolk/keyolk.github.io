@@ -8,6 +8,7 @@ languageCode = "ko-KR"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 defaultContentLanguage = "ko"
 defaultContentLanguageInSubdir= true
+enablegitinfo = true
 
 theme = "hugo-theme-learn"
 disqusShortname = "keyolk"

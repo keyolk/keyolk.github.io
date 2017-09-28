@@ -6,11 +6,9 @@
 {{ end }}
 {{ end }}
 {{ .Content }}
-<footer class=" footline" >
-	{{with .Params.LastModifierDisplayName}}
-	    <i class='fa fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a> {{with $.Date}} <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}{{end}}
-	    </div>
-	{{end}}
+<footer class=" footline">
+  <i class='fa fa-user'></i> <a href="mailto:{{ .GitInfo.AuthorEmail }}">{{ .GitInfo.AuthorName }}</a>
+  <i class='fa fa-calendar'></i> {{ .GitInfo.AuthorDate }}
 </footer>
 {{ partial "adsense.html" . }}
 {{ partial "disqus.html" . }}
