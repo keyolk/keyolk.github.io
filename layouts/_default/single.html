@@ -7,9 +7,9 @@
 {{ end }}
 {{ .Content }}
 <footer class=" footline">
-  <i class='fa fa-user'></i> <a href="mailto:{{ .GitInfo.AuthorEmail }}">{{ .GitInfo.AuthorName }}</a>
+  written by <i class='fa fa-user'></i> <a href="mailto:{{ .GitInfo.AuthorEmail }}">{{ .GitInfo.AuthorName }}</a>
   {{ with .GitInfo.AuthorDate }}
-  <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}
+  on <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}
   {{ end }}
 </footer>
 {{ partial "adsense.html" . }}
