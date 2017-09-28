@@ -1,7 +1,7 @@
 +++
 title  = "mathematics"
 toc    = true
-weight = 0
+weight = 10
 +++
 
 ## Intro
