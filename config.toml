@@ -1,11 +1,12 @@
-baseurl = "https://keyolk.github.io"
 contentDir = "content"
 layoutDir = "layouts"
 publishDir = "public"
-title = "keyolk's page"
+
 canonifyURLs = true
+baseurl = "https://keyolk.github.io"
+title = "keyolk's page"
+
 languageCode = "ko-KR"
-copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 defaultContentLanguage = "ko"
 defaultContentLanguageInSubdir= true
 enablegitinfo = true
@@ -13,6 +14,8 @@ enablegitinfo = true
 theme = "hugo-theme-learn"
 disqusShortname = "keyolk"
 googleAnalytics = "UA-77710672-1"
+
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 
 [taxonomies]
   tag = "tags"
