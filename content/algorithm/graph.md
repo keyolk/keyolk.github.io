@@ -2,8 +2,6 @@
 title  = "graph"
 toc    = true
 weight = 5
-prev   = "/algorithm/tree"
-next   = "/algorithm/network"
 +++
 
 ## Intro
