@@ -2,8 +2,6 @@
 title  = "mathematics"
 toc    = true
 weight = 0
-prev   = "/algorithm"
-next   = "/algorithm/datastructure"
 +++
 
 ## Intro
