@@ -39,16 +39,17 @@ $ ./startprefix
 ```bash
 $ emerge --sync
 $ etc-update
-$ emerge --ask --update --newuse sys-apps/portage
+$ emerge --update --newuse sys-apps/portage
 ```
 
 fish, tmux, neovim 설치
 
 ```bash
-$ emerge --ask app-shells/fish
-$ emerge --ask app-misc/tmux
-$ env USE="-clipboard" emerge --ask app-editors/neovim
-$ emerge --ask dev-python/pip
+$ emerge app-shells/fish
+$ emerge app-misc/tmux
+$ env USE="-clipboard" emerge app-editors/neovim
+$ emerge dev-python/pip
+$ emerge ripgrep
 ```
 
 python은 아래와 같이 사용할 수 있다.
