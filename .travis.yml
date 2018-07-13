@@ -16,7 +16,6 @@ install:
   - sudo dpkg -i hugo*.deb
 
 script:
-  - git submodule update --init --recursive
   - hugo
 
 deploy:
