@@ -41,4 +41,4 @@ weight = 1
 - scalar: number, string, etc
 - multi-valued: sets
 
-{{%attachments title="Related files" pattern="*.*"/%}}
+{{%attachments title="Related files" pattern=".*"/%}}
