@@ -79,6 +79,14 @@ googleAnalytics = "${GOOGLE_ANALYTICS}"
 [Travis CI](travis-ci.org)
 
 ## Google Adsence
+[Google Adsence](https://www.google.com/adsense)
+
+## Lunr.js
+검색 기능을 제공하려 할때 사용할 수 있다.
+[Learn](https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/) Theme에서 기본적으로 포함되어 있지만. 한국어 indexing을 지원하지 않는다.
+
+아래에서 forking된 lunr.js를 사용하면 한글도 indexing 되어 검색할 수 있다.
+https://github.com/codepiano/lunr.js
+
 
 ## Troubleshooting
-
