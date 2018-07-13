@@ -12,7 +12,7 @@ env:
     - DEPLOY_BRANCH="master"
 
 install:
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.31.1/hugo_0.31.1_Linux-64bit.deb
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.43/hugo_0.43_Linux-64bit.deb
   - sudo dpkg -i hugo*.deb
 
 script:
