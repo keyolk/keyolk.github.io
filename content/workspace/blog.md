@@ -34,6 +34,12 @@ arch에선 User Repository형태로 제공된다.
 $ yaourt -Sy hugo
 ```
 
+go 환경이 갖춰져있으면 아래와 같이 설치 한다.
+
+```bash
+$ go get github.com/spf13/hugo
+```
+
 #### Generate Static Web Pages
 
 새로 site를 만들때 file layout을 만들어준다.
@@ -81,4 +87,3 @@ googleAnalytics = "${GOOGLE_ANALYTICS}"
 ## Google Adsence
 
 ## Troubleshooting
-
