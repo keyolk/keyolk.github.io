@@ -12,7 +12,7 @@ weight = 1
 - Durability
 
 ## NoSQL
-#### CAP
+### CAP
 - Consistency
 - Availability
 - Partition tolerance
@@ -25,11 +25,18 @@ weight = 1
 - CA: Aster Data, Greenplum
 - CP: BigTable, Hbase, MongoDB, Redis, MemcacheDB
 
-
-#### BASE
+### BASE
 - Basically Available
 - Soft-state
 - Eventually consistency
+
+### PACELC
+> if there is a partition (P) how does the system tradeoff between availability and consistency (A and C); else (E) when the system is running as normal in the absence of partitions, how does the system tradeoff between latency (L) and consistency (C)?
+
+- Hbase : PC/EC
+- Cassandra : PA/EL
+
+![img](../database.files/nosql_pacelc.png)
 
 ## Data Model
 - relational
