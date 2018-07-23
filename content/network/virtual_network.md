@@ -1,30 +1,18 @@
 +++
-title  = "network"
+title  = "Virtual Network"
 toc    = true
 weight = 0
 +++
 
-## OSI 7 Layers
-
-- Application
-- Presentation
-- Session
-- Transport
-- Network
-- Data Link
-- Physical
-
-## Virtualization
-
-#### SDN
+## SDN
 
 Software Defined Network
 
-#### NFV
+## NFV
 
 Network Function Virtualization
 
-#### Overlay and Underlay
+## Overlay and Underlay
 
 - VLAN
 - GRE : Generic Route Encapsulation
