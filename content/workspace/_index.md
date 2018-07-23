@@ -2,6 +2,7 @@
 title   = "Workspace"
 chapter = true
 icon    = "<b>-</b>"
+weight  = 0
 +++
 
 # Workspace

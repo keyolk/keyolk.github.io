@@ -1,6 +1,7 @@
 +++
-title  = "network"
-toc    = true
+title  = "Network"
+chapter = true
+icon = "<b>-</b>"
 weight = 0
 +++
 
