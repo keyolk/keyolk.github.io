@@ -15,5 +15,16 @@ weight = 0
 | ${parameter?word}  | substitute parameter | substitute null | error, exit     |
 | ${parameter:+word} | substitute word      | substitute null | substitute null |
 
+### Parameter Expansion
+
+- Case modification
+  - ${var^}
+  - ${var^^}
+  - ${var,}
+  - ${var,,}
+  - ${var~}
+  - ${var~~}
+
 ## Reference
 * http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02
+* http://wiki.bash-hackers.org/syntax/pe
