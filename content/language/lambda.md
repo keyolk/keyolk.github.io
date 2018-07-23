@@ -16,6 +16,14 @@ weight = 0
 
 ## Labda Function & Lambda Expression
 
+## IIFE
+Immediately Invoked Function Expression
+```
+func(twoSeconds time.Duration) {
+    // use twoSeconds
+}(time.Second * 2)
+```
+
 ## Closure
 
 - Free&Bound Variable
