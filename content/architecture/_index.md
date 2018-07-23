@@ -2,6 +2,7 @@
 title = "Architecture"
 chapter = true
 icon = "<b>-</b>"
+weight = 3
 +++
 
 # Architecture

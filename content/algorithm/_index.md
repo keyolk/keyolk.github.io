@@ -2,7 +2,7 @@
 title   = "Algorithm"
 chapter = true
 icon    = "<b>-</b>"
-weight  = 1
+weight  = 2
 +++
 
 # Algorithm
