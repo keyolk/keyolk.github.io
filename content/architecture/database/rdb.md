@@ -13,8 +13,8 @@ Relational Database
 - Durability
 
 ## Normalization
-- 1NF
-- 2NF
+- 1NF: atomic value
+- 2NF 
 - 3NF
 - BCNF
 
