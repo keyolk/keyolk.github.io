@@ -4,28 +4,29 @@ toc    = true
 weight = 1
 +++
 
-## Relational Database
-#### ACID
+Relational Database
+
+## ACID
 - Atomicity
 - Consistency
 - Isolation
 - Durability
 
-### Normalization
+## Normalization
 - 1NF
 - 2NF
 - 3NF
 - BCNF
 
-### Join
-#### Logical Join
+## Join
+### Logical Join
 - innter join
 - outer join
 - cross join
 
-#### Physical Join
+### Physical Join
 - Nested Loop Join
 - Sort Merge Join
 - Hash Match Join
 
-### Index
+## Index
