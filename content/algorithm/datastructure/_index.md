@@ -1,6 +1,6 @@
 +++
 title  = "datastructure"
-toc    = true
+chapter = true
 weight = 1
 +++
 
