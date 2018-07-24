@@ -1,15 +1,8 @@
 +++
-title  = "database"
-toc    = true
-weight = 1
+title  = "nosql"
+toc = true
+weight = 2
 +++
-
-## Relational Database
-#### ACID
-- Atomicity
-- Consistency
-- Isolation
-- Durability
 
 ## NoSQL
 ### CAP
@@ -17,7 +10,7 @@ weight = 1
 - Availability
 - Partition tolerance
 
-![img](../database.files/nosql_cap.png)
+![img](../files/nosql_cap.png)
 
 각각 조합에 대한 예: \
 
@@ -36,7 +29,7 @@ weight = 1
 - Hbase : PC/EC
 - Cassandra : PA/EL
 
-![img](../database.files/nosql_pacelc.png)
+![img](../files/nosql_pacelc.png)
 
 ## Data Model
 - relational
@@ -47,5 +40,3 @@ weight = 1
 ## Data Type
 - scalar: number, string, etc
 - multi-valued: sets
-
-{{%attachments title="Related files" pattern=".*"/%}}
