@@ -8,9 +8,11 @@
 {{ .Content }}
 <hr>
 <footer class=" footline">
+  {{ if .IsPage }}
   written by <i class='fa fa-user'></i> <a href="mailto:{{ .GitInfo.AuthorEmail }}">{{ .GitInfo.AuthorName }}</a>
   {{ with .GitInfo.AuthorDate }}
   on <i class='fa fa-calendar'></i> {{ .Format "02/01/2006" }}
+  {{ end }}
   {{ end }}
 </footer>
 {{ partial "disqus.html" . }}

@@ -4,5 +4,6 @@ chapter = true
 weight = 1
 +++
 
-## RDB
-## NOSQL
+# Database
+- RDB
+- NOSQL
