@@ -5,6 +5,10 @@ weight = 4
 +++
 
 ## Splay
+- Splay
+- ZigZig
+- ZigZag
+- Rotate
 
 ```c
 // The code is adopted from http://goo.gl/SDH9hH

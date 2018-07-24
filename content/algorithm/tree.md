@@ -15,3 +15,7 @@ weight = 4
 
 ### Least Common Ancestor
 - Range Minimum Query
+
+## Binary Tree
+
+## N Tree

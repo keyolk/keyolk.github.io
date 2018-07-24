@@ -102,6 +102,7 @@ googleAnalytics = "${GOOGLE_ANALYTICS}"
 
 [hugo](https://gohugo.io)에서 [internal templates](https://gohugo.io/templates/internal/)을 지원하는 경우 이를 사용하는게 편하다.
 
+_layouts/_default/single.html_
 ```
 ...
 {{ partial "_internal/google_analytics_async.html" . }}
@@ -109,8 +110,8 @@ googleAnalytics = "${GOOGLE_ANALYTICS}"
 ```
 
 ## Prose.io
-
-[Prose.io](http://prose.io/)
+[Prose.io](http://prose.io/)를 통해 markdown editor를 붙여줄 수 있다.
+github url을 직접 써도 괜찮지만, 조금 더 나은 작성 환경을 제공 해줄 수 있다.
 
 _config.toml_
 ```toml
@@ -120,9 +121,17 @@ _config.toml_
 ...
 ```
 
-## Travis CI
+위 경로는 아래와 같이 page header로 들어가게 된다.
 
-[Travis CI](travis-ci.org)
+```bash
+$ grep -nri editurl themes/hugo-theme-learn/layouts/partials/
+layouts/partials/header.html:46:                {{ if and (or .IsPage .IsSection) .Site.Params.editURL }}
+layouts/partials/header.html:51:                    <a class="github-link" href="{{ $Site.Params.editURL }}{{ replace $File.Dir "\\" "/" }}{{ $File.LogicalName }}" target="blank">
+```
+
+## Travis CI
+[Jekyll](https://jekyllrb.com/)과는 달리 [Hugo](https://gohugo.io/)는 [GitHub Pages](https://pages.github.com/)에서 직접 site generation을 지원해주지 않는다.
+[Travis CI](travis-ci.org)를 통해 commit이 등록될때 마다 site를 생성, 배포되게 할 수 있다.
 
 _.travis.yml_
 ```yaml
@@ -156,11 +165,14 @@ deploy:
       branch: hugo
 ```
 
-## Google Adsence
-[Google Adsence](https://www.google.com/adsense)
+## Google Adsense
+광고를 붙이고자할땐 [Google Adsence](https://www.google.com/adsense)가 제일 편하다.
 
 사용하고 있는 
-[Learn](https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/) Theme엔 custom-header를 정의할 수 있다.
+[Learn](https://matcornic.github.io/hugo-learn-doc/basics/what-is-this-hugo-theme/) Theme엔 custom-header를 정의할 수 있는데,
+
+[관련 guide](https://support.google.com/adsense/answer/181947?hl=en&ref_topic=28893&visit_id=1-636680046495836692-3681375313&rd=1)를 참고해서 script가
+single page에 들어 갈 수 있게 만들어준다.
 
 ```bash
 $ find themes/ | grep custom-header
