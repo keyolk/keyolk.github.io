@@ -16,3 +16,9 @@ easy align : ga
 
 surround : cs ds ysiw yss
 
+## Slow startup time
+profile 해보자
+
+```
+$ vim ${FILE_TO_OPEN} --startuptime profile
+```
