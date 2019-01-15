@@ -1,0 +1,52 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: 
+webhook_url: 
+sections:
+- type: directory
+  path: content
+  label: Pages
+  create: all
+  match: "*"
+- type: directory
+  path: content/security
+  label: Security
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/network
+  label: Network
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/language
+  label: Language
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/algorithm
+  label: Algorithm
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/workspace
+  label: Workspace
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/architecture
+  label: Architecture
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/system
+  label: System
+  create: all
+  match: "**/*"
+upload_dir: static/uploads
+public_path: "/uploads"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+version: '0.53'
