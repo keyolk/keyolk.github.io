@@ -24,6 +24,16 @@ $ chmod +x bootstrap-rap.sh
 $ ./bootstrap-rap.sh
 ```
 
+bash version이 낮은 경우 bash 부터 bootstrap 해야한다.
+https://wiki.gentoo.org/wiki/Project:Prefix/Bootstrap
+
+```
+$ wget https://gitweb.gentoo.org/repo/proj/prefix.git/plain/scripts/bootstrap-bash.sh
+$ chmod +x bootstrap-bash.sh
+$ mkdir -p /tmp/bash
+$ ./bootstrap-bash /tmp/bash
+```
+
 #### Initialize
 
 bootstrap이 완료되면 startprefix script 가 생성된다.
