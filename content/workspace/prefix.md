@@ -13,6 +13,12 @@ Root 권한이 없는 System에서
 
 관련 Step 정리.
 
+```
+$ wget https://gitweb.gentoo.org/repo/proj/prefix.git/plain/scripts/bootstrap-prefix.sh
+$ chmod +x bootstrap-prefix.sh
+$ ./bootstrap-prefix.sh
+```
+
 #### RAP
 
 libc version이 낮은 system에선 prefix가 정상적으로 bootstrap 되지 않는다.
