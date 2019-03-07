@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on Personal Documentation</title>
+    <link>https://keyolk.github.io/security/</link>
+    <description>Recent content in Security on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 23 Jul 2018 23:44:56 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>openscap</title>
+      <link>https://keyolk.github.io/security/openscap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/security/openscap/</guid>
+      <description> SCAP: Security Content Automation Protocol XCCDF: Extensible Configuration Checklist Description Format OVAL: Open Vulnerability and Assessment Language  </description>
+    </item>
+    
+    <item>
+      <title>rootkit</title>
+      <link>https://keyolk.github.io/security/rootkit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/security/rootkit/</guid>
+      <description>LKM  kernel내 syscall table에 등록된 syscall의 주소를 변조. kernel의 syscall 내부에 inline assembly로 구현된어있는 function들에 대한 offset을 변조.  asmlinkage int new_write (unsigned int x, const char __user *y, size_t size) { printk(KERN_EMERG &amp;quot;[+] write() hooked.&amp;quot;); return original_write(x, y, size); } static int __init onload(void) { char *kernel_version = kmalloc(MAX_VERSION_LEN, GFP_KERNEL); printk(KERN_EMERG &amp;quot;Version: %s\n&amp;quot;, acquire_kernel_version(kernel_version)); find_sys_call_table(acquire_kernel_version(kernel_version)); printk(KERN_EMERG &amp;quot;Syscall table address: %p\n&amp;quot;, syscall_table); printk(KERN_EMERG &amp;quot;sizeof(unsigned long *): %zx\n&amp;quot;, sizeof(unsigned long*)); printk(KERN_EMERG &amp;quot;sizeof(sys_call_table) : %zx\n&amp;quot;, sizeof(syscall_table)); if (syscall_table !</description>
+    </item>
+    
+  </channel>
+</rss>

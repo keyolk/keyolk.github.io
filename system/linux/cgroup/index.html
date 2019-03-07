@@ -1,0 +1,3703 @@
+<!DOCTYPE html>
+<html lang="ko" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.43" />
+    <meta name="description" content="hugo contents for keyolk.github.io">
+<meta name="author" content="keyolk">
+
+    <link rel="shortcut icon" href="https://keyolk.github.io/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="https://keyolk.github.io/images/favicon.png" type="image/x-icon" />
+
+    <title>cgroup :: Personal Documentation</title>
+    
+    
+    <link href="https://keyolk.github.io/css/nucleus.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/font-awesome.min.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/hybrid.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/featherlight.min.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/perfect-scrollbar.min.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/horsey.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/theme.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/hugo-theme.css?1551920893" rel="stylesheet">
+    
+      <link href="https://keyolk.github.io/css/theme-blue.css?1551920893" rel="stylesheet">
+    
+
+    <script src="https://keyolk.github.io/js/jquery-2.x.min.js?1551920893"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5222442308579087",
+    enable_page_level_ads: true
+  });
+</script>
+
+  </head>
+  <body class="" data-url="/system/linux/cgroup/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<a href="https://keyolk.github.io/" style="color: white; margin-top:10px;">
+  <div style="margin-top:5px; font-size: 25px;"><b>keyolk</b></div>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="https://keyolk.github.io/js/lunr.min.js?1551920893"></script>
+<script type="text/javascript" src="https://keyolk.github.io/js/horsey.js?1551920893"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/keyolk.github.io";
+    
+</script>
+<script type="text/javascript" src="https://keyolk.github.io/js/search.js?1551920893"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/workspace/" title="Workspace" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/workspace/">
+          Workspace
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/fish/" title="fish" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/fish/">
+        fish
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/proxy/" title="proxy" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/proxy/">
+        proxy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/vi/" title="vi" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/vi/">
+        vi
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/blog/" title="blog" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/blog/">
+        blog
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/gcloud/" title="gcloud" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/gcloud/">
+        gcloud
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/personal/" title="personal" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/personal/">
+        personal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/prefix/" title="prefix" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/prefix/">
+        prefix
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/algorithm/" title="Algorithm" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/algorithm/">
+          Algorithm
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/algorithm/datastructure/" title="datastructure" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/algorithm/datastructure/">
+          datastructure
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/balanced_tree/" title="balanced tree" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/balanced_tree/">
+        balanced tree
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/heap/" title="heap" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/heap/">
+        heap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/priority_queue/" title="priority queue" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/priority_queue/">
+        priority queue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/queue/" title="queue" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/queue/">
+        queue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/stack/" title="stack" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/stack/">
+        stack
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/tree/" title="tree" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/tree/">
+        tree
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/graph/" title="graph" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/graph/">
+        graph
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/algorithm_pattern/" title="algorithm pattern" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/algorithm_pattern/">
+        algorithm pattern
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/gc/" title="gc" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/gc/">
+        gc
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/sorting/" title="sorting" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/sorting/">
+        sorting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/network/" title="network" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/network/">
+        network
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/computational_geometry/" title="computational geometry" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/computational_geometry/">
+        computational geometry
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/string_matching/" title="string matching" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/string_matching/">
+        string matching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/mathematics/" title="mathematics" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/mathematics/">
+        mathematics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/etc/" title="etc" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/etc/">
+        etc
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/architecture/" title="Architecture" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/architecture/">
+          Architecture
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/architecture/database/" title="database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/architecture/database/">
+          database
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/database/rdb/" title="rdb" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/database/rdb/">
+        rdb
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/database/nosql/" title="nosql" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/database/nosql/">
+        nosql
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/monitoring/" title="monitoring" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/monitoring/">
+        monitoring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/architecture/distributed_system/" title="distributed system" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/architecture/distributed_system/">
+          distributed system
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/bully/" title="bully" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/bully/">
+        bully
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/gossip/" title="gossip" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/gossip/">
+        gossip
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/paxos/" title="paxos" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/paxos/">
+        paxos
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/raft/" title="raft" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/raft/">
+        raft
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/zab/" title="zab" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/zab/">
+        zab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/msa/" title="msa" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/msa/">
+        msa
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/serverless/" title="serverless" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/serverless/">
+        serverless
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/system/" title="System" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/">
+          System
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/system/storage/" title="Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/storage/">
+          Storage
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/storage/raid/" title="raid" class="dd-item ">
+        <a href="https://keyolk.github.io/system/storage/raid/">
+        raid
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/system/virtual_machine/" title="Virtual Miachine" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/virtual_machine/">
+          Virtual Miachine
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/system/container/" title="Container" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/container/">
+          Container
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/network/" title="network" class="dd-item ">
+        <a href="https://keyolk.github.io/system/container/network/">
+        network
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/security/" title="security" class="dd-item ">
+        <a href="https://keyolk.github.io/system/container/security/">
+        security
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/inside/" title="inside" class="dd-item ">
+        <a href="https://keyolk.github.io/system/container/inside/">
+        inside
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/kubernetes/" title="kubernetes" class="dd-item ">
+        <a href="https://keyolk.github.io/system/container/kubernetes/">
+        kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/standard/" title="standard" class="dd-item ">
+        <a href="https://keyolk.github.io/system/container/standard/">
+        standard
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/system/linux/" title="linux" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/linux/">
+          linux
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/criu/" title="criu" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/criu/">
+        criu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/cgroup/" title="cgroup" class="dd-item active">
+        <a href="https://keyolk.github.io/system/linux/cgroup/">
+        cgroup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/metric/" title="metric" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/metric/">
+        metric
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/namespace/" title="namespace" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/namespace/">
+        namespace
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/proxy/" title="proxy" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/proxy/">
+        proxy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/vagrant/" title="vagrant" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/vagrant/">
+        vagrant
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/deadlock/" title="deadlock" class="dd-item ">
+        <a href="https://keyolk.github.io/system/deadlock/">
+        deadlock
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/thread/" title="thread" class="dd-item ">
+        <a href="https://keyolk.github.io/system/thread/">
+        thread
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/network/" title="Network" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/network/">
+          Network
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/arp/" title="arp" class="dd-item ">
+        <a href="https://keyolk.github.io/network/arp/">
+        arp
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/dns/" title="dns" class="dd-item ">
+        <a href="https://keyolk.github.io/network/dns/">
+        dns
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/http/" title="http" class="dd-item ">
+        <a href="https://keyolk.github.io/network/http/">
+        http
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/osi7/" title="osi7" class="dd-item ">
+        <a href="https://keyolk.github.io/network/osi7/">
+        osi7
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/virtual_network/" title="virtual network" class="dd-item ">
+        <a href="https://keyolk.github.io/network/virtual_network/">
+        virtual network
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/security/" title="Security" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/security/">
+          Security
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/security/vulnerability/" title="vulnerability" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/security/vulnerability/">
+          vulnerability
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/security/vulnerability/cve-2016-9962/" title="CVE-2016-9962" class="dd-item ">
+        <a href="https://keyolk.github.io/security/vulnerability/cve-2016-9962/">
+        CVE-2016-9962
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/security/openscap/" title="openscap" class="dd-item ">
+        <a href="https://keyolk.github.io/security/openscap/">
+        openscap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/security/rootkit/" title="rootkit" class="dd-item ">
+        <a href="https://keyolk.github.io/security/rootkit/">
+        rootkit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/language/" title="Language" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/language/">
+          Language
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language/functional_programming/" title="functional programming" class="dd-item ">
+        <a href="https://keyolk.github.io/language/functional_programming/">
+        functional programming
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language/lambda/" title="lambda" class="dd-item ">
+        <a href="https://keyolk.github.io/language/lambda/">
+        lambda
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language/regular_expression/" title="regular expression" class="dd-item ">
+        <a href="https://keyolk.github.io/language/regular_expression/">
+        regular expression
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language/shellscript/" title="shellscript" class="dd-item ">
+        <a href="https://keyolk.github.io/language/shellscript/">
+        shellscript
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3></h3>
+        <ul>
+          
+              <li class="" role=""> 
+                  <a class="padding" href="https://github.com/keyolk"><i class='fa fa-github'></i> GitHub</a>
+              </li>
+          
+              <li class="" role=""> 
+                  <a class="padding" href="https://linkedin.com/in/keyolk"><i class='fa fa-linkedin'></i> LinkedIn</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable sticky-parent">
+              
+              <div class="sticky-spacer">
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" href="http://prose.io/#keyolk/keyolk.github.io/edit/hugo/content/system/linux/cgroup.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://keyolk.github.io/'>keyolk's page</a> > <a href='https://keyolk.github.io/system/'>System</a> > <a href='https://keyolk.github.io/system/linux/'>linux</a> > cgroup
+          
+         
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#user-view">User View</a></li>
+<li><a href="#kernel-view">Kernel View</a></li>
+<li><a href="#subsystem">Subsystem</a></li>
+<li><a href="#cgroup-control">Cgroup Control</a>
+<ul>
+<li>
+<ul>
+<li><a href="#systemd">Systemd</a></li>
+<li><a href="#cpu">cpu</a></li>
+<li><a href="#cpuset">cpuset</a></li>
+<li><a href="#memory">memory</a></li>
+<li><a href="#device">device</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#reference">Reference</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>cgroup</h1>
+          
+
+        
+
+
+
+<p>Process group별 Management를 제공하는 I/F이다.</p>
+
+<p>Cgroup자체는 Process Grouping만을 수행하며, <br />
+Resource에 대한 관리는 Subsystem을 통해 이뤄진다. <br />
+Cgroup으로 만들어진 Process Group은 hierachy하게 만들어질 수 있다.</p>
+
+<p>결과적으로 Cgroup을 통해 다음과 같은 기능을 제공한다.</p>
+
+<ul>
+<li>limiting : Group에 대한 resoure 사용 제한. <br /></li>
+<li>prioritization : CPU 및 disk I/O 자원에 대한 우선순위 부여. <br /></li>
+<li>accounting : System에서 사용하는 resource 측정. <br /></li>
+<li>control : Group별 contol 제공.</li>
+</ul>
+
+<p>sysfs나 procfs와 같이 low-level filesystem interface로 구현되며, <br />
+모든 cgroups 관련 action은 filesystem을 통해서 이뤄진다.</p>
+
+<p>create/remove directory, read/write file, mount/umount</p>
+
+<ul>
+<li>cgroup inode_operation : cgroup mkidr/rmdir</li>
+<li>cgroup file_system_type : cgroup mount/umount</li>
+<li>cgroup file_operation : read/write to control file</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th>subsystem</th>
+<th>version</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>cgroups</td>
+<td>2.6.24</td>
+</tr>
+
+<tr>
+<td>net_prio</td>
+<td>3.3</td>
+</tr>
+
+<tr>
+<td>net_cls</td>
+<td>3.3</td>
+</tr>
+
+<tr>
+<td>blkio async I/O</td>
+<td>3.10</td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/images/RMG-rule1.png" alt="alt tag" /></p>
+
+<p><img src="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/images/RMG-rule2.png" alt="alt tag" /></p>
+
+<p><img src="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/images/RMG-rule3.png" alt="alt tag" /></p>
+
+<p><img src="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/images/RMG-rule4.png" alt="alt tag" /></p>
+
+<h2 id="user-view">User View</h2>
+
+<p>일반적으로 /sys/fs/cgroups에 cgroupfs가 mount된다.
+여기서 생성되는 모든 entry는 reboot될때 지워진다. → persistent 하지 않다.</p>
+
+<pre><code class="language-bash">$ ls -l /sys/fs/cgroups
+total 0
+dr-xr-xr-x 2 root root  0 Jan  1  1970 bfqio
+dr-xr-xr-x 4 root root  0 Jan  1  1970 blkio
+lrwxrwxrwx 1 root root 11 Jan  1  1970 cpu -&gt; cpu,cpuacct
+dr-xr-xr-x 4 root root  0 Jan  1  1970 cpu,cpuacct
+lrwxrwxrwx 1 root root 11 Jan  1  1970 cpuacct -&gt; cpu,cpuacct
+dr-xr-xr-x 3 root root  0 Jan  1  1970 cpuset
+dr-xr-xr-x 4 root root  0 Jan  1  1970 devices
+dr-xr-xr-x 3 root root  0 Jan  1  1970 freezer
+lrwxrwxrwx 1 root root 16 Jan  1  1970 net_cls -&gt; net_cls,net_prio
+dr-xr-xr-x 2 root root  0 Jan  1  1970 net_cls,net_prio
+lrwxrwxrwx 1 root root 16 Jan  1  1970 net_prio -&gt; net_cls,net_prio
+dr-xr-xr-x 2 root root  0 Jan  1  1970 perf_event
+dr-xr-xr-x 4 root root  0 Jan  1  1970 systemd`
+</code></pre>
+
+<p>전체 cgroup에 대한 요약정보를 /proc에서 얻을 수 있다.</p>
+
+<pre><code class="language-bash">$ cat /proc/cgruops
+#subsys_name    hierarchy       num_cgroups     enabled
+cpuset  7       3       1
+cpu     4       41      1
+cpuacct 4       41      1
+blkio   5       41      1
+memory  0       1       0
+devices 3       41      1
+freezer 9       3       1
+net_cls 2       1       1
+bfqio   8       1       1
+perf_event      6       1       1
+net_prio        2       1       1
+</code></pre>
+
+<p>현재 process와 관련, mount된 cgroup을 다음과 같이 알 수 있다.</p>
+
+<pre><code class="language-bash">$  cat /proc/self/cgroup
+9:devices:/user.slice/user-0.slice/session-c3.scope
+8:net_cls,net_prio:/
+7:perf_event:/
+6:cpuset:/
+5:freezer:/
+4:bfqio:/
+3:blkio:/user.slice/user-0.slice/session-c3.scope
+2:cpu,cpuacct:/user.slice/user-0.slice/session-c3.scope
+1:name=systemd:/user.slice/user-0.slice/session-c3.scope
+[root@pi boot]# cat /proc/$$/cgroup
+9:devices:/user.slice/user-0.slice/session-c3.scope
+8:net_cls,net_prio:/
+7:perf_event:/
+6:cpuset:/
+5:freezer:/
+4:bfqio:/
+3:blkio:/user.slice/user-0.slice/session-c3.scope
+2:cpu,cpuacct:/user.slice/user-0.slice/session-c3.scope
+1:name=systemd:/user.slice/user-0.slice/session-c3.scope
+</code></pre>
+
+<p>cgroup tree에 관해선 아래와 같은 rule이 적용된다.</p>
+
+<h2 id="kernel-view">Kernel View</h2>
+
+<p>kernel 내 아래 path에 cgroup 관련 hook이 들어가 있다.</p>
+
+<ul>
+<li>in boot phase
+
+<ul>
+<li>start_kernel() : <a href="http://lxr.free-electrons.com/source/init/main.c?v=4.0#L489">http://lxr.free-electrons.com/source/init/main.c?v=4.0#L489</a></li>
+<li>cgroup_init_early() : <a href="http://lxr.free-electrons.com/source/init/main.c?v=4.0#L508">http://lxr.free-electrons.com/source/init/main.c?v=4.0#L508</a></li>
+<li>cgroup_init_early() : <a href="http://lxr.free-electrons.com/source/include/linux/cgroup.h#L32">http://lxr.free-electrons.com/source/include/linux/cgroup.h#L32</a></li>
+<li>cgroup_init_early() : <a href="http://lxr.free-electrons.com/source/kernel/cgroup.c?v=4.0#L4953">http://lxr.free-electrons.com/source/kernel/cgroup.c?v=4.0#L4953</a></li>
+<li>cgroup_init() : <a href="http://lxr.free-electrons.com/source/init/main.c?v=4.0#L657">http://lxr.free-electrons.com/source/init/main.c?v=4.0#L657</a></li>
+<li>cgroup_init() : <a href="http://lxr.free-electrons.com/source/include/linux/cgroup.h#L33">http://lxr.free-electrons.com/source/include/linux/cgroup.h#L33</a></li>
+<li>cgroup_init() : <a href="http://lxr.free-electrons.com/source/kernel/cgroup.c?v=4.0#L4987">http://lxr.free-electrons.com/source/kernel/cgroup.c?v=4.0#L4987</a></li>
+</ul></li>
+<li>in process creation/destory method, fork() &amp; exit()
+
+<ul>
+<li>copy_procyss() : <a href="http://lxr.free-electrons.com/source/kernel/fork.c?v=4.0#L1190">http://lxr.free-electrons.com/source/kernel/fork.c?v=4.0#L1190</a></li>
+<li>cgroup_fork() : <a href="http://lxr.free-electrons.com/source/kernel/fork.c?v=4.0#L1324">http://lxr.free-electrons.com/source/kernel/fork.c?v=4.0#L1324</a></li>
+<li>cgroup_fork() : <a href="http://lxr.free-electrons.com/source/include/linux/cgroup.h?v=4.0#L34">http://lxr.free-electrons.com/source/include/linux/cgroup.h?v=4.0#L34</a></li>
+<li>cgroup_fork() : <a href="http://lxr.free-electrons.com/source/kernel/cgroup.c?v=4.0#L5182">http://lxr.free-electrons.com/source/kernel/cgroup.c?v=4.0#L5182</a></li>
+<li>cgroup_post_fork() : <a href="http://lxr.free-electrons.com/source/kernel/fork.c?v=4.0#L1549">http://lxr.free-electrons.com/source/kernel/fork.c?v=4.0#L1549</a></li>
+<li>cgroup_post_fork() : <a href="http://lxr.free-electrons.com/source/include/linux/cgroup.h?v=4.0#L35">http://lxr.free-electrons.com/source/include/linux/cgroup.h?v=4.0#L35</a></li>
+<li>cgroup_post_fork() : <a href="http://lxr.free-electrons.com/source/kernel/cgroup.c?v=4.0#L5198">http://lxr.free-electrons.com/source/kernel/cgroup.c?v=4.0#L5198</a></li>
+</ul></li>
+<li>new file system type “cgroup” (VFS)
+
+<ul>
+<li>/sys/fs/cgroup : system에서 사용하는 cgroup mount point</li>
+</ul></li>
+<li>process descriptor additions (struct task_struct)</li>
+<li>procfs entries :
+
+<ul>
+<li>/proc/pid/cgroup</li>
+<li>/proc/cgroups</li>
+</ul></li>
+</ul>
+
+<p>task_struct내에서 관련 filed를 찾을 수 있다. <br />
+struct task_struct : <a href="http://lxr.free-electrons.com/source/include/linux/sched.h?v=4.0#L1278">http://lxr.free-electrons.com/source/include/linux/sched.h?v=4.0#L1278</a> <br />
+struct css_set __rcu *cgroups : <a href="http://lxr.free-electrons.com/source/include/linux/sched.h?v=4.0#L1570">http://lxr.free-electrons.com/source/include/linux/sched.h?v=4.0#L1570</a> <br />
+struct css_set : <a href="http://lxr.free-electrons.com/source/include/linux/cgroup.h?v=4.0#L325">http://lxr.free-electrons.com/source/include/linux/cgroup.h?v=4.0#L325</a> </p>
+
+<p>아래에서 list가 link된다. <br />
+struct list_head task : <a href="http://lxr.free-electrons.com/source/include/linux/cgroup.h?v=4.0#L343">http://lxr.free-electrons.com/source/include/linux/cgroup.h?v=4.0#L343</a> <br />
+지원하는 subsystem에 대해 기술되어 있다. <br />
+cgroup_subsys.h : <a href="http://lxr.free-electrons.com/source/include/linux/cgroup_subsys.h?v=4.0">http://lxr.free-electrons.com/source/include/linux/cgroup_subsys.h?v=4.0</a> </p>
+
+<h2 id="subsystem">Subsystem</h2>
+
+<p>Group별로 Subsystem을 통해 Group을 제어 할 수 있다. <br />
+상위 Group의 Subsystem 정책은 하위로 상속된다. </p>
+
+<p>4.1 기준으로 현재 11개의 subsystem을 지원해주고 있다. </p>
+
+<ul>
+<li>cpuset_subsys
+
+<ul>
+<li>개별 cpu와 memory node를 task에 할당한다.</li>
+<li>struct cgroup_subsys cpuset_cgrp_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/kernel/cpuset.c?v=4.0#L2036">http://lxr.free-electrons.com/source/kernel/cpuset.c?v=4.0#L2036</a></li>
+</ul></li>
+<li>freezer_subsys
+
+<ul>
+<li>task를 suspend하거나 resume 한다.</li>
+<li>struct cgroup_subsys freezer_cgrp_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/kernel/cgroup_freezer.c?v=4.0#L476">http://lxr.free-electrons.com/source/kernel/cgroup_freezer.c?v=4.0#L476</a></li>
+</ul></li>
+<li>mem_cgroup_subsys
+
+<ul>
+<li>task의 memory 사용을 제한하고 task의 memory 사용량을 report 한다.</li>
+<li>struct cgroup_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/mm/memcontrol.c?v=4.0#L5381">http://lxr.free-electrons.com/source/mm/memcontrol.c?v=4.0#L5381</a></li>
+</ul></li>
+<li>blkio_subsys
+
+<ul>
+<li>block device의 input/output을 제한한다.</li>
+<li>struct cgroup_subsys blkio_cgrp_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/block/blk-cgroup.c?v=4.0#L924">http://lxr.free-electrons.com/source/block/blk-cgroup.c?v=4.0#L924</a></li>
+</ul></li>
+<li>net_prio_subsys
+
+<ul>
+<li>network interface 별로 priority를 동적으로 설정해준다.</li>
+<li>struct cgroup_subsys net_prio_cgrp_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/net/core/netprio_cgroup.c?v=4.0#L247">http://lxr.free-electrons.com/source/net/core/netprio_cgroup.c?v=4.0#L247</a></li>
+<li>module로 사용 가능.</li>
+</ul></li>
+<li>devices_subsys
+
+<ul>
+<li>task의 device access를 제한한다.</li>
+<li>struct cgroup_subsys devices_cgrp_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/security/device_cgroup.c?v=4.0#L794">http://lxr.free-electrons.com/source/security/device_cgroup.c?v=4.0#L794</a></li>
+</ul></li>
+<li>perf_subsys
+
+<ul>
+<li>struct cgroup_subsys perf_event_cgrp_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/kernel/events/core.c?v=4.0#L8629">http://lxr.free-electrons.com/source/kernel/events/core.c?v=4.0#L8629</a></li>
+</ul></li>
+<li>hugetlb_subsys
+
+<ul>
+<li>struct cgroup_subsys hugetlb_cgrp_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/mm/hugetlb_cgroup.c?v=4.0#L418">http://lxr.free-electrons.com/source/mm/hugetlb_cgroup.c?v=4.0#L418</a></li>
+</ul></li>
+<li>cpu_cgrp_subsys
+
+<ul>
+<li>struct cgroup_subsys cpu_cgrp_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/kernel/sched/core.c?v=4.0#L8363">http://lxr.free-electrons.com/source/kernel/sched/core.c?v=4.0#L8363</a></li>
+</ul></li>
+<li>cpuacct_subsys
+
+<ul>
+<li>struct cgroup_subsys cpuacct_cgrp_subsys :</li>
+<li><a href="http://lxr.free-electrons.com/source/kernel/sched/cpuacct.c?v=4.0#L278">http://lxr.free-electrons.com/source/kernel/sched/cpuacct.c?v=4.0#L278</a></li>
+</ul></li>
+<li>net_cls_subsys
+
+<ul>
+<li>module로 사용 가능.</li>
+</ul></li>
+</ul>
+
+<p>위는 다시 아래와 같이 구분해볼 수 있다.</p>
+
+<ul>
+<li>Isolation and Sepcial Controller
+
+<ul>
+<li>cpuset, namespace, freezer, device, checkpoint/restart</li>
+</ul></li>
+<li>Resource Controller
+
+<ul>
+<li>cpu(scheduler), memory, disk I/O, network</li>
+</ul></li>
+</ul>
+
+<p>subsystem은 각기 따로 사용할수도 있고 한번에 사용할 수도 있다.</p>
+
+<pre><code class="language-bash">$ mount -t cgroup -o cpu none /cpu
+
+$ mount -t cgroup -o cpuset none /cpuset
+
+$ mount -t cgroup none /cgroups
+</code></pre>
+
+<h2 id="cgroup-control">Cgroup Control</h2>
+
+<h4 id="systemd">Systemd</h4>
+
+<p>systemd를 사용하는 system에선 systemd 도구로 cgroup을 제어할 수 있다.
+다음 명령은 system 상에 존재하는 cgroup과 subsystem 구조를 보여준다.</p>
+
+<pre><code class="language-bash">$ systemd-cgls
+</code></pre>
+
+<p>cgroup별 resource 사용 현황도 살필 수 있다.</p>
+
+<pre><code class="language-bash">$ systemd-cgtop
+</code></pre>
+
+<p>현재 process에 적용된 정책을 살펴보자</p>
+
+<pre><code class="language-bash">$ cat /sys/fs/cgroup/cpu/system.slice/smbd.service/cpu.shares
+1024
+
+$ systemctl set-property smbd.service CPUShares=200
+
+$ systemctl show -p CPUShares smbd.service
+CPUShares=200
+
+$ cat /sys/fs/cgroup/cpu/system.slice/smbd.service/cpu.shares
+200
+</code></pre>
+
+<h4 id="cpu">cpu</h4>
+
+<pre><code class="language-bash">$ ls /sys/fs/cgroup/cpu
+cgroup.clone_children  cpu.cfs_period_us  cpu.rt_runtime_us  cpuacct.stat          notify_on_release  tasks
+cgroup.procs           cpu.cfs_quota_us   cpu.shares         cpuacct.usage         release_agent      user.slice
+cgroup.sane_behavior   cpu.rt_period_us   cpu.stat           cpuacct.usage_percpu  system.slice
+</code></pre>
+
+<p>주요 I/F는 아래와 같다.</p>
+
+<table>
+<thead>
+<tr>
+<th>I/F</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>cpu.shares</td>
+<td>CPU core의 점유율을 2~262114의 수치로 지정한다(default 1024).</td>
+</tr>
+
+<tr>
+<td>cpu.cfs_period_us</td>
+<td>CPU 사용 시간 비율의 상한을 지정(default는 무제한)</td>
+</tr>
+
+<tr>
+<td>cpu.cfs_quota_us</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="cpuset">cpuset</h4>
+
+<p>cpuset을 이용해 process별 core 사용에 대한 제한을 가한다.</p>
+
+<pre><code class="language-bash">$ ls /sys/fs/cgroup/cpuset
+cgroup.clone_children  cpuset.effective_cpus  cpuset.memory_pressure          cpuset.sched_load_balance
+cgroup.procs           cpuset.effective_mems  cpuset.memory_pressure_enabled  cpuset.sched_relax_domain_level
+cgroup.sane_behavior   cpuset.mem_exclusive   cpuset.memory_spread_page       notify_on_release
+cpuset.cpu_exclusive   cpuset.mem_hardwall    cpuset.memory_spread_slab       release_agent
+cpuset.cpus            cpuset.memory_migrate  cpuset.mems                     tasks
+</code></pre>
+
+<p>주요 I/F는 아래와 같다.</p>
+
+<table>
+<thead>
+<tr>
+<th>I/F</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>cpuset.cpus</td>
+<td>process를 실행하는 CPU core 지정.</td>
+</tr>
+
+<tr>
+<td>cpuset.cpu_exclusive</td>
+<td>1로 set되면 이 group이 지정한 cpu cores는 다른 group에서 지정하지 못한다.</td>
+</tr>
+
+<tr>
+<td>cpuset.mems</td>
+<td>NUMA architecture의 process가 이용하는 memory node를 지정.</td>
+</tr>
+</tbody>
+</table>
+
+<p>stress tool을 사용해서 비교 해본다.</p>
+
+<pre><code class="language-bash">$ unshare /bin/sh
+
+$ pstree -p
+systemd(1)-+-agetty(194)
+           |-agetty(195)
+           |-avahi-daemon(262)---avahi-daemon(263)
+           |-dbus-daemon(190)
+           |-docker(198)-+-{docker}(200)
+           |             |-{docker}(201)
+           |             |-{docker}(202)
+           |             |-{docker}(204)
+           |             `-{docker}(206)
+           |-haveged(193)
+           |-nmbd(207)
+           |-smbd(256)---smbd(260)
+           |-sshd(199)-+-sshd(266)---bash(273)
+           |           `-sshd(285)---bash(287)---sh(332)---pstree(344)
+           |-systemd(269)---(sd-pam)(270)
+           |-systemd-journal(115)
+           |-systemd-logind(189)
+           |-systemd-resolve(197)
+           |-systemd-timesyn(182)---{sd-resolve}(184)
+           `-systemd-udevd(141)
+  
+$ stress -m 3 --vm-bytes 128m -t 60s
+
+$ top
+</code></pre>
+
+<p>4개 core를 모두 100% 사용함을 확인할 수 있다.
+이제 cgroup으로 제약을 가한다.</p>
+
+<pre><code class="language-bash">$ cd /sys/fs/cgroup/cpuset/
+
+$ mkdir test/
+
+$ cd test/
+
+$ echo 0 &gt; cpuset.cpus
+
+$ echo 0 &gt; cpuset.mems
+
+$ echo 332 &gt; tasks
+</code></pre>
+
+<p>같은 test를 반복한다.</p>
+
+<pre><code class="language-bash">$ stress -m 3 --vmbytes 128m -t 60s
+$ top
+</code></pre>
+
+<p>0번 core만 사용됨을 알 수 있다.</p>
+
+<h4 id="memory">memory</h4>
+
+<p>process 별 memory 사용에 대한 제약을 가한다. <br />
+memory가 부족할 경우 적용할 사항을 oom_control을 통해 조정해 줄 수 있다. </p>
+
+<pre><code class="language-bash">$ ls /sys/fs/cgroup/memory
+cgroup.clone_children           memory.kmem.tcp.max_usage_in_bytes  memory.pressure_level
+cgroup.event_control            memory.kmem.tcp.usage_in_bytes      memory.soft_limit_in_bytes
+cgroup.procs                    memory.kmem.usage_in_bytes          memory.stat
+cgroup.sane_behavior            memory.limit_in_bytes               memory.swappiness
+memory.failcnt                  memory.max_usage_in_bytes           memory.usage_in_bytes
+memory.force_empty              memory.memsw.failcnt                memory.use_hierarchy
+memory.kmem.failcnt             memory.memsw.limit_in_bytes         notify_on_release
+memory.kmem.limit_in_bytes      memory.memsw.max_usage_in_bytes     release_agent
+memory.kmem.max_usage_in_bytes  memory.memsw.usage_in_bytes         system.slice
+memory.kmem.slabinfo            memory.move_charge_at_immigrate     tasks
+memory.kmem.tcp.failcnt         memory.numa_stat                    user.slice
+memory.kmem.tcp.limit_in_bytes  memory.oom_control
+</code></pre>
+
+<p>주요 I/F는 아래와 같다.</p>
+
+<table>
+<thead>
+<tr>
+<th>I/F</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>memory.limit_in_bytes</td>
+<td>해당 group을 이용할 수 있는 물리 memory의 상한(byte)을 지정</td>
+</tr>
+
+<tr>
+<td>memory.memsw.limit_in_bytes</td>
+<td>해당 group을 이용할 수 있는 &lsquo;물리 memory + swap영역&rsquo;의 상한(byte)을 지정</td>
+</tr>
+
+<tr>
+<td>memory.use_hierachy</td>
+<td>1이 set되면 해당 group의 memory 사용량에 sub group의 process memory 사용량도 추가된다(default는 0).</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code class="language-bash">$ cd /sys/fs/cgroup/memory $ mkdir group1 $ echo 128M &gt; group1/memory.limit_in_bytes $ echo $$ &gt; group1/tasks $ stress --vm 1 --vm-bytes 127M --timeout 60s $ stress --vm 1 --vm-bytes 128M --timeout 60s $ echo 1 &gt; group1/memory.oom_control $ echo 2G &gt; group1/memory.limit_in_bytes $ stress --vm 1 --vm-bytes 512M --timeout 60s $ stress --vm 1 --vm-bytes 1G --timeout 60s $ echo 0 &gt; group1/memory.oom_control $ stress --vm 1 --vm-bytes 512M --timeout 60s $ stress --vm 1 --vm-bytes 1G --timeout 60s
+</code></pre>
+
+<h4 id="device">device</h4>
+
+<p>device file의 사용에 대한 제한을 가한다.
+3가지 file이 있다.
+* devices.allow : whitelist
+* devices.deny : blacklist
+* devices.list : 사용가능한 device</p>
+
+<p>각각에 대해서 4가지 filed가 있다.</p>
+
+<ul>
+<li>Type :
+
+<ul>
+<li>a : all</li>
+<li>c : char device</li>
+<li>b : block device</li>
+</ul></li>
+<li>Major number</li>
+<li>Minor number</li>
+<li>Access :
+
+<ul>
+<li>r : read</li>
+<li>w : write</li>
+<li>m : mknode</li>
+</ul></li>
+</ul>
+
+<p>/dev/null 의 경우 major는 1 minor는 3이다.</p>
+
+<pre><code class="language-bash">$ mkdir /sys/fs/cgroup/devices/0
+
+$ cat /sys/fs/cgroup/devices/0/devices.list
+a &quot;:&quot; rwm
+
+$ echo &quot;a *:* rmw&quot; &gt; /sys/fs/cgroup/devices/0/devices.deny
+
+$ echo $$ &gt; /sys/fs/cgroup/devices/0/tasks
+
+$ echo &quot;test &gt; /dev/null
+bash: /dev/null: Operation not permitted
+
+$ echo &quot;a *.* rwm&quot; &gt; /sys/fs/cgroup/devices/0/devices.allow
+
+$ echo &quot;test&quot; &gt; /dev/null
+blkio
+
+$ ls /sys/fs/cgroup
+blkio.io_merged            blkio.io_service_bytes_recursive  blkio.io_wait_time            blkio.sectors                    blkio.throttle.read_iops_device   blkio.weight           notify_on_release
+blkio.io_merged_recursive  blkio.io_service_time             blkio.io_wait_time_recursive  blkio.sectors_recursive          blkio.throttle.write_bps_device   blkio.weight_device    release_agent
+blkio.io_queued            blkio.io_service_time_recursive   blkio.leaf_weight             blkio.throttle.io_service_bytes  blkio.throttle.write_iops_device  cgroup.clone_children  system.slice
+blkio.io_queued_recursive  blkio.io_serviced                 blkio.leaf_weight_device      blkio.throttle.io_serviced       blkio.time                        cgroup.procs           tasks
+blkio.io_service_bytes     blkio.io_serviced_recursive       blkio.reset_stats             blkio.throttle.read_bps_device   blkio.time_recursive              cgroup.sane_behavior   user.slice
+</code></pre>
+
+<p>주요 I/F는 아래와 같다.</p>
+
+<table>
+<thead>
+<tr>
+<th>I/F</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>blkio.weight</td>
+<td>모든 block device에 공통적인 우선순위를 100~1000의 값으로 지정(default는 500).</td>
+</tr>
+
+<tr>
+<td>blkio.weight_device</td>
+<td>특정 device에 대한 우선순위를 지정.</td>
+</tr>
+
+<tr>
+<td>blkio.throttle.read_bps_device</td>
+<td>특정 device에 대한 접근 속도의 상한을 Bytes/Sec 단위로 지정.</td>
+</tr>
+
+<tr>
+<td>blkio.throttle.write_bps_device</td>
+<td></td>
+</tr>
+
+<tr>
+<td>blkio.throttle.read_iops_device</td>
+<td>특정 dsevice에 대한 접근 속도의 상한을 IOPS 단위로 지정.</td>
+</tr>
+
+<tr>
+<td>blkio.throttle.write_iops_device</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="reference">Reference</h2>
+
+<p><a href="https://www.linuxfoundation.jp/jp_uploads/seminar20081119/CgroupMemcgMaster.pdf">https://www.linuxfoundation.jp/jp_uploads/seminar20081119/CgroupMemcgMaster.pdf</a> <br />
+<a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/sec-memory.html">https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/sec-memory.html</a> </p>
+
+<hr>
+<footer class=" footline">
+  
+  written by <i class='fa fa-user'></i> <a href="mailto:keyolk@gmail.com">keyolk</a>
+  
+  on <i class='fa fa-calendar'></i> 28/09/2017
+  
+  
+</footer>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'keyolk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+        </div> 
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="https://keyolk.github.io/system/linux/criu/" title="criu"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="https://keyolk.github.io/system/linux/metric/" title="metric" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://keyolk.github.io/js/clipboard.min.js?1551920894"></script>
+    <script src="https://keyolk.github.io/js/perfect-scrollbar.min.js?1551920894"></script>
+    <script src="https://keyolk.github.io/js/perfect-scrollbar.jquery.min.js?1551920894"></script>
+    <script src="https://keyolk.github.io/js/jquery.sticky-kit.min.js?1551920894"></script>
+    <script src="https://keyolk.github.io/js/featherlight.min.js?1551920894"></script>
+    <script src="https://keyolk.github.io/js/html5shiv-printshiv.min.js?1551920894"></script>
+    <script src="https://keyolk.github.io/js/highlight.pack.js?1551920894"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://keyolk.github.io/js/modernizr.custom.71422.js?1551920894"></script>
+    <script src="https://keyolk.github.io/js/learn.js?1551920894"></script>
+    <script src="https://keyolk.github.io/js/hugo-learn.js?1551920894"></script>
+
+    <link href="https://keyolk.github.io/mermaid/mermaid.css?1551920894" type="text/css" rel="stylesheet" />
+    <script src="https://keyolk.github.io/mermaid/mermaid.js?1551920894"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-77710672-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+

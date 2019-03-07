@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal on Personal Documentation</title>
+    <link>https://keyolk.github.io/tags/terminal/</link>
+    <description>Recent content in Terminal on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    
+	<atom:link href="https://keyolk.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>personal</title>
+      <link>https://keyolk.github.io/workspace/personal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/personal/</guid>
+      <description>Intro 개인 Desktop Environment 구축하기 위해 필요한 Step 정리. 현재 사용 중인 System 기준
+ H/W : Chrombook Pixel2 LS OS : ApricityOS Desktop : Gnome3 Terminal : zsh + tmux + nvim + powerline + fzf  Terminal 관련 상세 설정은 여기에서 확인할 수 있다.
+Chromebook  enable developer mode enable SeaBIOS  ApricityOS Install https://apricityos.com/download
+Kernel https://github.com/raphael/linux-samus
+Package #!/bin/bash git submodule update --init --recursive sudo pacman -Syy zsh tmux neovim git xclip meld python-pip sudo pacman -Syy python-neovim python2-neovim sudo pacman -Syy fzf the_silver_searcher sudo pacman -Syy docker vagrant # install python virtualenv sudo pacman -Syy pythob-virtualenv python2-virtualenv # install gvm to manage golang version and workspace zsh &amp;lt; &amp;lt;(curl -s -S -L https://raw.</description>
+    </item>
+    
+    <item>
+      <title>prefix</title>
+      <link>https://keyolk.github.io/workspace/prefix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/prefix/</guid>
+      <description>Intro Root 권한이 없는 System에서 개인 workspace를 만들기위해 필요한 package를 설치하기위해 Gentoo Prefix를 사용.
+관련 Step 정리.
+$ wget https://gitweb.gentoo.org/repo/proj/prefix.git/plain/scripts/bootstrap-prefix.sh $ chmod +x bootstrap-prefix.sh $ ./bootstrap-prefix.sh  RAP libc version이 낮은 system에선 prefix가 정상적으로 bootstrap 되지 않는다. RAP script를 사용하면 최신 libc부터 시작하여 prefix를 bootstrap 해준다.
+$ wget http://dev.gentoo.org/~heroxbd/bootstrap-rap.sh $ chmod +x bootstrap-rap.sh $ ./bootstrap-rap.sh  bash version이 낮은 경우 bash 부터 bootstrap 해야한다. https://wiki.gentoo.org/wiki/Project:Prefix/Bootstrap
+$ wget https://gitweb.gentoo.org/repo/proj/prefix.git/plain/scripts/bootstrap-bash.sh $ chmod +x bootstrap-bash.</description>
+    </item>
+    
+  </channel>
+</rss>

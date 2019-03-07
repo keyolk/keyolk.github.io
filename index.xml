@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>keyolk&#39;s page on Personal Documentation</title>
+    <link>https://keyolk.github.io/</link>
+    <description>Recent content in keyolk&#39;s page on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 28 Sep 2017 15:15:25 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>bully</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/bully/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/bully/</guid>
+      <description> Bully </description>
+    </item>
+    
+    <item>
+      <title>criu</title>
+      <link>https://keyolk.github.io/system/linux/criu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/criu/</guid>
+      <description>Checkpoint &amp;amp; Restore in Userspace
+Usage $ criu dump -t ${PID} -vvv -o dump.log &amp;amp;&amp;amp; echo OK $ criu restore -d -vvv -o restore.log &amp;amp;&amp;amp; echo OK $ criu dump -vvvv -o dump.log -t ${PID --shell-job &amp;amp;&amp;amp; echo OK $ criu restore -vvvv -o restore.log --shell-job &amp;amp;&amp;amp; echo OK  Details  ptrace mmap parasite code injection TCP repair mode  Dump  Stop the tasks  Freez by PTRACE_SEIZE or cgroup freezer Lock network  Collect process information  proc files parasite injection Credential, memory contents, signals  Dump pages  memory pages copied via vmsplice and splice syscalls   Restore  tree  Issues  External Resources  Unix socket TCP Shell Jobs File locks Bind mounts  Device Accesses  /dev/null, /dev/net/tun X applications  ETC  File System SysV IPC Nested namespace or cgroup   Reference  https://media.</description>
+    </item>
+    
+    <item>
+      <title>fish</title>
+      <link>https://keyolk.github.io/workspace/fish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/fish/</guid>
+      <description> slow startup 보통 set -x를 잘못써서 특정 global variable의 길이가 너무 길어지는게 문제가 된다.
+&amp;ldquo;fish_user_paths&amp;rdquo; 길이를 체크해볼 필요가 있다.
+$ set -U # 확인 후 $ set -e fish_user_paths # 필요 시 삭제  </description>
+    </item>
+    
+    <item>
+      <title>gossip</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/gossip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/gossip/</guid>
+      <description> Gossip </description>
+    </item>
+    
+    <item>
+      <title>monitoring</title>
+      <link>https://keyolk.github.io/architecture/monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/monitoring/</guid>
+      <description>Push vs Pull  Target discovery Who initiates metric transfer  Reference http://www.boxever.com/push-vs-pull-for-monitoring/</description>
+    </item>
+    
+    <item>
+      <title>paxos</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/paxos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/paxos/</guid>
+      <description> Paxos </description>
+    </item>
+    
+    <item>
+      <title>proxy</title>
+      <link>https://keyolk.github.io/workspace/proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/proxy/</guid>
+      <description>Intro 사무실용 환경 설정에 필요한 Step 정리.
+ Corporation Firewall에 따른 개인용 Transparent Proxy. 이종 OS간 Keyboard/Mouse Sharing. 내부 가상화 환경. SSH.  OpenSSH Remote Host Configuration File을 통해 Remote Host를 관리하면 편하다.
+$ cat ~/.ssh/config  Host remote1 Hostname 1.2.3.4 User root IdentityFile remote1 ForwardX11 yes ProxyCommand ssh proxy nc %h %p  위의 예는 SSH를 연결하면서 X11Forward와 Dynamic Proxy 연결을 같이 한다.
+IdentityFile을 별도로 만들경우 아래와 같이 사용 가능하다.</description>
+    </item>
+    
+    <item>
+      <title>raft</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/raft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/raft/</guid>
+      <description> Raft Available Status  Follower Candidate Leader  Process  Leader Election  Voting Randomized Timeouts  Log Replication  Election Timeout - folower -&amp;gt; candidate
+Heartbeat Timeout
+Reference  http://thesecretlivesofdata.com/raft/ https://ramcloud.stanford.edu/wiki/download/attachments/11370504/raft.pdf https://raft.github.io/  </description>
+    </item>
+    
+    <item>
+      <title>raid</title>
+      <link>https://keyolk.github.io/system/storage/raid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/storage/raid/</guid>
+      <description>RAID Redundat Array of Inexpensive Disk
+Hardware RAID &amp;amp; Software RAID Striping &amp;amp; Mirroring Striping: 논리적으로 연속된 data segment를 물리적으로 여러개의 디스크에 RR 방식으로 나눠 저장.
+Mirroring: Data Replicatin
+Architecture RAID 0 Striped disk array without fault tolerance
+RAID 1 Mirrroing and duplexing
+RAID 2 Hamming code ECC
+RAID 3 Parallel transfer with parity
+하나의 디스크를 Parity 용으로 사용
+RAID 4 Independent data disk with shared parity disk
+하나의 디스크를 Parity 용으로 사용하 되, 블락 단위로 분산 저장.</description>
+    </item>
+    
+    <item>
+      <title>rdb</title>
+      <link>https://keyolk.github.io/architecture/database/rdb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/database/rdb/</guid>
+      <description> Relational Database
+ACID  Atomicity Consistency Isolation Durability  Normalization  1NF: atomic value 2NF 3NF BCNF  Join Logical Join  innter join outer join cross join  Physical Join  Nested Loop Join Sort Merge Join Hash Match Join  Index </description>
+    </item>
+    
+    <item>
+      <title>vi</title>
+      <link>https://keyolk.github.io/workspace/vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/vi/</guid>
+      <description>  filetype syntax omnifunc  https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db
+multi cursor : / cgn .
+easy align : ga
+surround : cs ds ysiw yss
+Slow startup time profile 해보자
+$ vim ${FILE_TO_OPEN} --startuptime profile  </description>
+    </item>
+    
+    <item>
+      <title>zab</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/zab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/zab/</guid>
+      <description> Zap </description>
+    </item>
+    
+    <item>
+      <title>algorithm pattern</title>
+      <link>https://keyolk.github.io/algorithm/algorithm_pattern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/algorithm_pattern/</guid>
+      <description> Intro  Backtracking Dynamic Programing Divide and Conquer Greedy Method  </description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://keyolk.github.io/workspace/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/blog/</guid>
+      <description>Intro Blogging 환경 구성을 위한 정리.
+ Hosting: GitHub Pages Site Generator: Hugo Theme: Learn Commenting: Disqus Analytics: Google Analytics Editor: Prose.io CI: Travis CI Google Adsence  GitHub Pages GitHub Pages을 통해 GitHub에 static site대한 hosting을 받을 수 있다.
+User Page를 만드려면 간단히 &amp;ldquo;${USER_NAME}.github.io&amp;rdquo;로 repository를 만들고 여기에 static web resource를 담으면 된다.
+Hugo Jekyll을 많이 쓰는데 Hugo가 redering 속도가 빠르고 보다 간편한것 같다.
+Install arch에선 User Repository형태로 제공된다.</description>
+    </item>
+    
+    <item>
+      <title>gc</title>
+      <link>https://keyolk.github.io/algorithm/gc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/gc/</guid>
+      <description>Referenche Counting 순환 참조 시 문제가 됨.
+Mark and Sweep root set을 두고 reference의 관계를 추적하면서 garbage를 수집.
+bitmap table이나 root object의 header에 reference에 대한 mark를 남김. 이를 통해 garbage 여부를 판단.
+Memory 파편화 위험이 있음.
+Mark and Compaction 파편화를 막기 위해 Compaction을 사용.
+Copying Heap을 Active/InActive로 나눠서 다룸.
+Generational Copying에서 더 나아가 보다 다양한 방식으로 sub heap을 나눠서 사용함. 각각 sub heap 마다 별개의 GC 방식 적용이 가능함.</description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>https://keyolk.github.io/system/container/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/network/</guid>
+      <description> Contaienr Network Model 참고하기 좋다.
+ http://murat1985.github.io/kubernetes/cni/2016/05/14/netns-and-cni.html http://murat1985.github.io/kubernetes/cni/2016/05/15/bagpipe-gobgp.html http://murat1985.github.io/kubernetes/cni/2016/05/15/kubernetes.html http://murat1985.github.io/kubernetes/cni/consul/2016/05/26/cni-consul.html http://murat1985.github.io/kubernetes/cni/consul/2016/07/14/cni-consul-impl.html  </description>
+    </item>
+    
+    <item>
+      <title>nosql</title>
+      <link>https://keyolk.github.io/architecture/database/nosql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/database/nosql/</guid>
+      <description>NoSQL CAP  Consistency Availability Partition tolerance  각각 조합에 대한 예:  AP: Dynamo, Cassandra, SimpleDB, CouchDB CA: Aster Data, Greenplum CP: BigTable, Hbase, MongoDB, Redis, MemcacheDB  BASE  Basically Available Soft-state Eventually consistency  PACELC  if there is a partition (P) how does the system tradeoff between availability and consistency (A and C); else (E) when the system is running as normal in the absence of partitions, how does the system tradeoff between latency (L) and consistency &amp;copy;?</description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://keyolk.github.io/system/container/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/security/</guid>
+      <description> Compliance Docker 경우 아래와같이 CIS에서 정리한게 있다.
+ 1.6 1.11 1.12  간단한 script를 docker에서 제공한다.
+Vulnerability  Twistlock: https://twistlock.com/ Aqua: https://www.aquasec.com/ Nautilus: https://blog.docker.com/tag/nautilus/ CoreOS Clair: https://github.com/coreos/clair OpenSCAP: https://github.com/OpenSCAP/container-compliance Lynis: https://cisofy.com/lynis/plugins/docker-containers/ Vuls: https://github.com/future-architect/vuls/  Content Trust  Docker Notary: https://github.com/docker/notary  Secret  HashiCorp Vault Square Keywhiz  </description>
+    </item>
+    
+    <item>
+      <title>sorting</title>
+      <link>https://keyolk.github.io/algorithm/sorting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/sorting/</guid>
+      <description>Intro  Selection Bubble Merge Quick Heap  Merge /* C program for Merge Sort */ #include&amp;lt;stdlib.h&amp;gt; #include&amp;lt;stdio.h&amp;gt; // Merges two subarrays of arr[]. // First subarray is arr[l..m] // Second subarray is arr[m+1..r] void merge(int arr[], int l, int m, int r) { int i, j, k; int n1 = m - l + 1; int n2 = r - m; /* create temp arrays */ int L[n1], R[n2]; /* Copy data to temp arrays L[] and R[] */ for (i = 0; i &amp;lt; n1; i++) L[i] = arr[l + i]; for (j = 0; j &amp;lt; n2; j++) R[j] = arr[m + 1+ j]; /* Merge the temp arrays back into arr[l.</description>
+    </item>
+    
+    <item>
+      <title>balanced tree</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/balanced_tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/balanced_tree/</guid>
+      <description>Splay  Splay ZigZig ZigZag Rotate  // The code is adopted from http://goo.gl/SDH9hH #include&amp;lt;stdio.h&amp;gt; #include&amp;lt;stdlib.h&amp;gt; // An AVL tree node struct node { int key; struct node *left, *right; }; /* Helper function that allocates a new node with the given key and NULL left and right pointers. */ struct node* newNode(int key) { struct node* node = (struct node*)malloc(sizeof(struct node)); node-&amp;gt;key = key; node-&amp;gt;left = node-&amp;gt;right = NULL; return (node); } // A utility function to right rotate subtree rooted with y // See the diagram given above.</description>
+    </item>
+    
+    <item>
+      <title>gcloud</title>
+      <link>https://keyolk.github.io/workspace/gcloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/gcloud/</guid>
+      <description> Intro $ curl https://sdk.cloud.google.com | bash  exec -l $SHELL  $ gcloud auth login  GKE $ gcloud components update kubectl  $ gcloud config set project keyolk $ glcoud config set compute/zone asia-east1-a  $ gcloud config set container/cluster keyolk  $ gcloud config list  $ gcloud container clusters create keyolk --num-nodes 2 --machine-type g1-small  $ gcloud compute instances list  $ kubectl run tomcat --image=tomcat  $ gcloud container clusters delete keyolk  </description>
+    </item>
+    
+    <item>
+      <title>heap</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/heap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/heap/</guid>
+      <description>// C++ program for implementation of Heap Sort #include &amp;lt;iostream&amp;gt; using namespace std; // To heapify a subtree rooted with node i which is // an index in arr[]. n is size of heap void heapify(int arr[], int n, int i) { int largest = i; // Initialize largest as root int l = 2*i + 1; // left = 2*i + 1 int r = 2*i + 2; // right = 2*i + 2 // If left child is larger than root if (l &amp;lt; n &amp;amp;&amp;amp; arr[l] &amp;gt; arr[largest]) largest = l; // If right child is larger than largest so far if (r &amp;lt; n &amp;amp;&amp;amp; arr[r] &amp;gt; arr[largest]) largest = r; // If largest is not root if (largest !</description>
+    </item>
+    
+    <item>
+      <title>inside</title>
+      <link>https://keyolk.github.io/system/container/inside/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/inside/</guid>
+      <description>Linux Features  namespace cgroups chroot pivot_root union mount bind mount iptables veth capabilities seccomp LSM  SELinux AppArmor   Linux에서 Container를 구성하는 주요 Kerenl Feature는 위와 같다.
+Simple Container 아래와 같이 간단한 container를 만들어 볼 수 있다. 유사한 project로 bocker가 있다.
+#define _GNU_SOURCE #include &amp;lt;sys/types.h&amp;gt; #include &amp;lt;sys/wait.h&amp;gt; #include &amp;lt;sys/mount.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;sched.h&amp;gt; #include &amp;lt;signal.h&amp;gt; #include &amp;lt;unistd.h&amp;gt; #define ChkErr(expr) if(expr!=0) { line=__LINE__; ret=expr; goto ErrorExit; } #define STACK_SIZE (1024 * 1024) static char child_stack[STACK_SIZE]; char* const child_args[] = { &amp;quot;/bin/sh&amp;quot;, NULL }; int checkpoint[2]; int ret; int line; void set_map(char* file, int inside_id, int outside_id, int len) { FILE* mapfd = fopen(file, &amp;quot;w&amp;quot;); if(NULL==mapfd) { perror(&amp;quot;open file error&amp;quot;); return; } fprintf(mapfd, &amp;quot;%d %d %d&amp;quot;, inside_id, outside_id, len); fclose(mapfd); } void set_uid_map(pid_t pid, int inside_id, int outside_id, int len) { char file[256]; sprintf(file, &amp;quot;/proc/%d/uid_map&amp;quot;, pid); set_map(file, inside_id, outside_id, len); } void set_gid_map(pid_t pid, int inside_id, int outside_id, int len) { char file[256]; sprintf(file, &amp;quot;/proc/%d/gid_map&amp;quot;, pid); set_map(file, inside_id, outside_id, len); } int child_main(void* arg) { char c; close(checkpoint[1]); printf(&amp;quot; - World !</description>
+    </item>
+    
+    <item>
+      <title>priority queue</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/priority_queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/priority_queue/</guid>
+      <description> Intro </description>
+    </item>
+    
+    <item>
+      <title>queue</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/queue/</guid>
+      <description>Intro Implementation /*static circular queue*/ #include &amp;lt;stdio.h&amp;gt; #define size 5 void insertq(int[], int); void deleteq(int[]); void display(int[]); int front = - 1; int rear = - 1; int main() { int n, ch; int queue[size]; do { printf(&amp;quot;\n\n Circular Queue:\n1. Insert \n2. Delete\n3. Display\n0. Exit&amp;quot;); printf(&amp;quot;\nEnter Choice 0-3? : &amp;quot;); scanf(&amp;quot;%d&amp;quot;, &amp;amp;ch); switch (ch) { case 1: printf(&amp;quot;\nEnter number: &amp;quot;); scanf(&amp;quot;%d&amp;quot;, &amp;amp;n); insertq(queue, n); break; case 2: deleteq(queue); break; case 3: display(queue); break; } }while (ch !</description>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/stack/</guid>
+      <description>Intro Implementation /* initialize stack pointer */ void init(int *top) { *top = 0; } /* push an element into stack precondition: the stack is not full */ void push(int *s,int* top, int element) { s[(*top)++] = element; } /* remove an element from stack precondition: stack is not empty */ int pop(int *s,int *top) { return s[--(*top)]; } /* return 1 if stack is full, otherwise return 0 */ int full(int *top,const int size) { return *top == size ?</description>
+    </item>
+    
+    <item>
+      <title>tree</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/tree/</guid>
+      <description> Intro Tree Traversal  Exhaustive Branch and Bound  Tree Search  In/Pre/Post Order Binary/Ternary  Least Common Ancestor  Range Minimum Query  Binary Tree N Tree </description>
+    </item>
+    
+    <item>
+      <title>graph</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/graph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/graph/</guid>
+      <description>Intro  Topological Sort  Minmum Spanning Tree  Prim Kruskal  Graph Traversal  Depth First Search Breadth First Search Best Firset Search Hamiltionian Path Eulerian Path  Shortest Path  Floyd-Warshal Dijkstra Bellman-Ford  Implementation Adjust Matrix Adjust List // A simple representation of graph using STL #include&amp;lt;bits/stdc++.h&amp;gt; using namespace std; // A utility function to add an edge in an // undirected graph. void addEdge(vector&amp;lt;int&amp;gt; adj[], int u, int v) { adj[u].</description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>https://keyolk.github.io/algorithm/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/network/</guid>
+      <description> Intro  Ford Fulkerson Bipartite Matching MCMF Hungarian Method  </description>
+    </item>
+    
+    <item>
+      <title>computational geometry</title>
+      <link>https://keyolk.github.io/algorithm/computational_geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/computational_geometry/</guid>
+      <description> Intro  Closest Pair  Line Sweeping  Farthest Pair  CCW Graham Scan Method Rotatin Calipers   </description>
+    </item>
+    
+    <item>
+      <title>string matching</title>
+      <link>https://keyolk.github.io/algorithm/string_matching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/string_matching/</guid>
+      <description> Intro  Knuth-Moriss-Pratt Aho-Corasick  </description>
+    </item>
+    
+    <item>
+      <title>mathematics</title>
+      <link>https://keyolk.github.io/algorithm/mathematics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/mathematics/</guid>
+      <description> Intro  Modulor Prime Number  Sieve of Eratosthenes  Prime Factorization Greatest Common Divisor  Euclid&amp;rsquo;s Algorithm  Least Common Multiplier Base Conversion Factorial Combination Permutation  </description>
+    </item>
+    
+    <item>
+      <title>etc</title>
+      <link>https://keyolk.github.io/algorithm/etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/etc/</guid>
+      <description> Intro Maximum Sum Sub Array  Kadane&amp;rsquo;s Algorithm  </description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://keyolk.github.io/system/container/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/kubernetes/</guid>
+      <description>Intro Production 환경에서, Kubernetes를 어떻게 배포/구성할지에 대해 정리.
+아래 사항에 대해서 Best Practice 찾아 기술.
+ deploy availability security performance  Deployment Multi Cloud 환경과 같이 infra 제공자가 다양한 경우 반복적으로 Cluster를 배포하게된다.
+Process에 따라 Kubernetes의 Cluster Federation도 활용될 수 있으며 이를 고려한 배포가 이뤄져야 한다.
+전반적인 배포 제어는 Ansible과 같은 도구를 활용하여 자동화한다.
+Multi Cloud Cluster를 배포할때, Multi Cloud를 통한 Affinity를 고려하자면 Hashicorp의 Terraform과 같은 추상화된 Cloud Management Tool을 사용하는게 좋다.</description>
+    </item>
+    
+    <item>
+      <title>CVE-2016-9962</title>
+      <link>https://keyolk.github.io/security/vulnerability/cve-2016-9962/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/security/vulnerability/cve-2016-9962/</guid>
+      <description>CVE-2016-9962 reproduction step described at here
+$ cd $GOPATH/src/github.com $ git clone https://github.com/opencontainers/runc opencontainers/runc $ git fetch origin 2cc5a91249ab3b362f1235da955d112017979d34 $ git checkout origin 2cc5a91249ab3b362f1235da955d112017979d34 $ vi $GOPATH/src/github.com/opencontainers/runc/libcontainer/setns_init_linux.go  아래 2개 line을 수정한다.
+package libcontainer import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; &amp;quot;github.com/opencontainers/runc/libcontainer/apparmor&amp;quot; &amp;quot;github.com/opencontainers/runc/libcontainer/keys&amp;quot; &amp;quot;github.com/opencontainers/runc/libcontainer/label&amp;quot; &amp;quot;github.com/opencontainers/runc/libcontainer/seccomp&amp;quot; &amp;quot;github.com/opencontainers/runc/libcontainer/system&amp;quot; + &amp;quot;time&amp;quot; )  if err := label.SetProcessLabel(l.config.ProcessLabel); err != nil { return err } + time.Sleep(500 * time.Second) return system.Execv(l.config.Args[0], l.config.Args[0:], os.Environ()) }  container를 생성한다.</description>
+    </item>
+    
+    <item>
+      <title>arp</title>
+      <link>https://keyolk.github.io/network/arp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/network/arp/</guid>
+      <description>Address Resolution Protocol</description>
+    </item>
+    
+    <item>
+      <title>cgroup</title>
+      <link>https://keyolk.github.io/system/linux/cgroup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/cgroup/</guid>
+      <description>Process group별 Management를 제공하는 I/F이다.
+Cgroup자체는 Process Grouping만을 수행하며, Resource에 대한 관리는 Subsystem을 통해 이뤄진다. Cgroup으로 만들어진 Process Group은 hierachy하게 만들어질 수 있다.
+결과적으로 Cgroup을 통해 다음과 같은 기능을 제공한다.
+ limiting : Group에 대한 resoure 사용 제한.  prioritization : CPU 및 disk I/O 자원에 대한 우선순위 부여.  accounting : System에서 사용하는 resource 측정.  control : Group별 contol 제공.  sysfs나 procfs와 같이 low-level filesystem interface로 구현되며, 모든 cgroups 관련 action은 filesystem을 통해서 이뤄진다.</description>
+    </item>
+    
+    <item>
+      <title>deadlock</title>
+      <link>https://keyolk.github.io/system/deadlock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/deadlock/</guid>
+      <description> Mutual Exclusion Hold and Wait No Preemption Circular Wait  </description>
+    </item>
+    
+    <item>
+      <title>dns</title>
+      <link>https://keyolk.github.io/network/dns/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/network/dns/</guid>
+      <description>Record A 192.0.2.1  CNAME hostname.example.com  SRV 10 5 80 hostname.example.com  각각 우선순위, 가중치, 포트를 나타냄.</description>
+    </item>
+    
+    <item>
+      <title>functional programming</title>
+      <link>https://keyolk.github.io/language/functional_programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/language/functional_programming/</guid>
+      <description> Functional Programming  Immutability First-class, high-order functions Lazy evaluation  </description>
+    </item>
+    
+    <item>
+      <title>http</title>
+      <link>https://keyolk.github.io/network/http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/network/http/</guid>
+      <description>HTTP/1.1 Issue  Head-of-line blocking, HoL  Single request / connection Request must be responded in order, FIFO  No optimised well  Uncompressed headers Redundant headers  Lack of Server-side push  SPDY&amp;amp;HTTP2  Multiplexed streams  Multiple stream over single TCP connection  Request Prioritization HTTP header compression  HPACK format Huffman code  Server Push  TCP/TLS Issue  HoL TCP 3-way handshaking TLS negotiation handshaking Large backoff on packet loss Poor perforamnce in mobile  QUIC Quick UDP Internet Connections</description>
+    </item>
+    
+    <item>
+      <title>lambda</title>
+      <link>https://keyolk.github.io/language/lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/language/lambda/</guid>
+      <description>Lambda Calculus  Anonymous Function: 이름을 갖을 필요가 없다. Currying: 두 개 이상의 입력이 있는 함수는 최종적으로 1개의 입력만 받는 Lambda Calculus로 단순화 될 수 있다.  Lambda Function  Anonymous Function First-class Function  Labda Function &amp;amp; Lambda Expression IIFE Immediately Invoked Function Expression
+func(twoSeconds time.Duration) { // use twoSeconds }(time.Second * 2)  Closure  Free&amp;amp;Bound Variable Opend&amp;amp;Closed Expression  익명 함수가 함수 내 정의 되지 않은 변수를 참조하는 경우.</description>
+    </item>
+    
+    <item>
+      <title>metric</title>
+      <link>https://keyolk.github.io/system/linux/metric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/metric/</guid>
+      <description> CPU Load Memory I/O Net RX/TX </description>
+    </item>
+    
+    <item>
+      <title>msa</title>
+      <link>https://keyolk.github.io/architecture/msa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/msa/</guid>
+      <description> Intro MSA, Micro Service Architecutre
+Polyglog </description>
+    </item>
+    
+    <item>
+      <title>namespace</title>
+      <link>https://keyolk.github.io/system/linux/namespace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/namespace/</guid>
+      <description>Namespace를 통해 Kernel 내 Global Resource에 대해 Process 별로 Partitioning을 제공한다. 기본적으로 Parent Process의 Namespace를 Child 에서 상속받는다.
+   Namespace Constant Related Resource Supporting Version     Mount CLONE_NEWNS Mount Points 2.4.19   UTS CLONE_NEWUTS Hostname, NIS domain name 2.6.24   IPC CLONE_NEWIPC SystemV IPC, POSIX Message Queue 2.6.24   PID CLONE_NEWPID Process IDs 2.6.24   Net CLONE_NEWNET Network Stacks 2.6.29   User CLONE_NEWUSER Network Stacks 3.</description>
+    </item>
+    
+    <item>
+      <title>openscap</title>
+      <link>https://keyolk.github.io/security/openscap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/security/openscap/</guid>
+      <description> SCAP: Security Content Automation Protocol XCCDF: Extensible Configuration Checklist Description Format OVAL: Open Vulnerability and Assessment Language  </description>
+    </item>
+    
+    <item>
+      <title>osi7</title>
+      <link>https://keyolk.github.io/network/osi7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/network/osi7/</guid>
+      <description> OSI 7 Layers  Application Presentation Session Transport Network Data Link Physical  </description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>https://keyolk.github.io/workspace/personal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/personal/</guid>
+      <description>Intro 개인 Desktop Environment 구축하기 위해 필요한 Step 정리. 현재 사용 중인 System 기준
+ H/W : Chrombook Pixel2 LS OS : ApricityOS Desktop : Gnome3 Terminal : zsh + tmux + nvim + powerline + fzf  Terminal 관련 상세 설정은 여기에서 확인할 수 있다.
+Chromebook  enable developer mode enable SeaBIOS  ApricityOS Install https://apricityos.com/download
+Kernel https://github.com/raphael/linux-samus
+Package #!/bin/bash git submodule update --init --recursive sudo pacman -Syy zsh tmux neovim git xclip meld python-pip sudo pacman -Syy python-neovim python2-neovim sudo pacman -Syy fzf the_silver_searcher sudo pacman -Syy docker vagrant # install python virtualenv sudo pacman -Syy pythob-virtualenv python2-virtualenv # install gvm to manage golang version and workspace zsh &amp;lt; &amp;lt;(curl -s -S -L https://raw.</description>
+    </item>
+    
+    <item>
+      <title>prefix</title>
+      <link>https://keyolk.github.io/workspace/prefix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/prefix/</guid>
+      <description>Intro Root 권한이 없는 System에서 개인 workspace를 만들기위해 필요한 package를 설치하기위해 Gentoo Prefix를 사용.
+관련 Step 정리.
+$ wget https://gitweb.gentoo.org/repo/proj/prefix.git/plain/scripts/bootstrap-prefix.sh $ chmod +x bootstrap-prefix.sh $ ./bootstrap-prefix.sh  RAP libc version이 낮은 system에선 prefix가 정상적으로 bootstrap 되지 않는다. RAP script를 사용하면 최신 libc부터 시작하여 prefix를 bootstrap 해준다.
+$ wget http://dev.gentoo.org/~heroxbd/bootstrap-rap.sh $ chmod +x bootstrap-rap.sh $ ./bootstrap-rap.sh  bash version이 낮은 경우 bash 부터 bootstrap 해야한다. https://wiki.gentoo.org/wiki/Project:Prefix/Bootstrap
+$ wget https://gitweb.gentoo.org/repo/proj/prefix.git/plain/scripts/bootstrap-bash.sh $ chmod +x bootstrap-bash.</description>
+    </item>
+    
+    <item>
+      <title>proxy</title>
+      <link>https://keyolk.github.io/system/linux/proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/proxy/</guid>
+      <description>Proxy Auto Config 대부분의 Browser에서 지원한다. javascript syntax를 사용한다.
+CLI에서 지원을 잘 안하는것 같다.
+ libproxy가 이를 지원하기위해 개발되고 있다. https://libproxy.github.io/libproxy
+ pacparser를 사용하면 pac으로 부터 URL에 해당되는 Proxy 정보를 가져올 수 있다. https://github.com/pacparser/pacparser
+  SSH Proxy  OpenSSH를 활용하여 간단한 SOCKS proxy를 만들 수 있다. https://keyolk.github.io/2016/06/30/Open-S-S-H.html
+ SOCKS proxy를 사용하지 못하는 application에서는 tsocks나 proxychains, sshuttle을 사용한다.
+  Utilities  tsocks를 사용하면 SOCKS proxy를 지원하지 않는 application에서도 이를 사용할 수 있게 할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>regular expression</title>
+      <link>https://keyolk.github.io/language/regular_expression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/language/regular_expression/</guid>
+      <description> Type  Posix Rerular Expression  BRE: Basic Regular Expression ERE: Extened Regular Expression  PCRE: Perl Compatible Regular Expression  Posix Regular Expression  IEE std 1003.1            문자지정 . 임의의 문자 한개   반복 지정 ? 선행 문자 패턴이 0개 혹은 1개    + 선행 문자 패턴이 1개 이상 반복    * 선행 문자 패턴이 0개 이상 반복    {m, n} 반복수 지정   위치지정 ^ 라인의 앞부분    $ 라인의 끝부분   그룹 지정 [&amp;hellip;] 그룹 중 한 문자    [^&amp;hellip;] 그룹 내 문자들을 제외한 나머지   기타  escape    | OR    () pattern group    </description>
+    </item>
+    
+    <item>
+      <title>rootkit</title>
+      <link>https://keyolk.github.io/security/rootkit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/security/rootkit/</guid>
+      <description>LKM  kernel내 syscall table에 등록된 syscall의 주소를 변조. kernel의 syscall 내부에 inline assembly로 구현된어있는 function들에 대한 offset을 변조.  asmlinkage int new_write (unsigned int x, const char __user *y, size_t size) { printk(KERN_EMERG &amp;quot;[+] write() hooked.&amp;quot;); return original_write(x, y, size); } static int __init onload(void) { char *kernel_version = kmalloc(MAX_VERSION_LEN, GFP_KERNEL); printk(KERN_EMERG &amp;quot;Version: %s\n&amp;quot;, acquire_kernel_version(kernel_version)); find_sys_call_table(acquire_kernel_version(kernel_version)); printk(KERN_EMERG &amp;quot;Syscall table address: %p\n&amp;quot;, syscall_table); printk(KERN_EMERG &amp;quot;sizeof(unsigned long *): %zx\n&amp;quot;, sizeof(unsigned long*)); printk(KERN_EMERG &amp;quot;sizeof(sys_call_table) : %zx\n&amp;quot;, sizeof(syscall_table)); if (syscall_table !</description>
+    </item>
+    
+    <item>
+      <title>serverless</title>
+      <link>https://keyolk.github.io/architecture/serverless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/serverless/</guid>
+      <description> Intro FAAS, Function as a Service
+Service Provider  lambda by AWS iron.io openwhisk by IBM Bluemix webtask.io nstack formerly stackhut  Framework  Serverless by AWS Apex CloudiaJS  Openrsource Kubernetes  funktion by Fabric fission by Platform9 kubeless  Reference  https://martinfowler.com/articles/serverless.html  </description>
+    </item>
+    
+    <item>
+      <title>shellscript</title>
+      <link>https://keyolk.github.io/language/shellscript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/language/shellscript/</guid>
+      <description>Parameter    variable Set and Not Null Set But Null Unset     ${parameter:-word} substitute parameter substitute word substitute word   ${parameter-word} substitute parameter substitute null substitute word   ${parameter:=word} substitute parameter assign word assign word   ${parameter=word} substitute parameter substitute null assign word   ${parameter:?word} substitute parameter error, exit error, exit   ${parameter?word} substitute parameter substitute null error, exit   ${parameter:+word} substitute word substitute null substitute null    Parameter Expansion  Case modification  ${var^} ${var^^} ${var,} ${var,,} ${var~} ${var~~}   Reference  http://pubs.</description>
+    </item>
+    
+    <item>
+      <title>standard</title>
+      <link>https://keyolk.github.io/system/container/standard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/standard/</guid>
+      <description> Engine OCI Open Container Initiative
+https://www.opencontainers.org/
+APPC Application Container Basics
+https://github.com/appc/spec
+CNCF Clound Native Computing Foundtaion
+https://www.cncf.io/
+CRI-O Container Runtime Interface
+aka OCID, Open Container Initiative Daemon
+https://github.com/kubernetes-incubator/cri-o
+http://thenewstack.io/cri-o-make-kubernetes-center-container-ecosystem/
+Network CNI libnetwork </description>
+    </item>
+    
+    <item>
+      <title>thread</title>
+      <link>https://keyolk.github.io/system/thread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/thread/</guid>
+      <description> Process &amp;amp; Thread </description>
+    </item>
+    
+    <item>
+      <title>vagrant</title>
+      <link>https://keyolk.github.io/system/linux/vagrant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/vagrant/</guid>
+      <description>Remote Vagrant Setup Setup libvirtd /usr/sbin/useradd -c &#39;HAL daemon&#39; -u 68 -s /sbin/nologin -r -d &#39;/&#39; haldaemon /usr/sbin/useradd -c &#39;dbus&#39; -u 69 -s /sbin/nologin -r -d &#39;/&#39; dbus mount -o ro,remount /sys; mount -o rw,remount /sys mount -t mqueue none /dev/mqueue service messagebus start service libvirtd start  $ virsh -c qemu:///system list  Install Vagarnt on Client wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.rpm rpm -ivh vagrant*.rpm vagrant plugin install vagrant-libvirt --plugin-version 0.0.35 vagrant init fedora/24-cloud-base vagrant up --provider=libvirt  Sample Vagrantfile INSTANCE_PREFIX=&amp;quot;centos&amp;quot; $num_instance = 3 $box = &amp;quot;centos/7&amp;quot; $vm_cpus = 2 $vm_memory = 1024 Vagrant.</description>
+    </item>
+    
+    <item>
+      <title>virtual network</title>
+      <link>https://keyolk.github.io/network/virtual_network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/network/virtual_network/</guid>
+      <description> SDN Software Defined Network
+NFV Network Function Virtualization
+Overlay and Underlay  VLAN GRE : Generic Route Encapsulation VXLAN : Virtual Extensible LAN Flat
+ BGP : Border Gateway Protocol
+  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,3290 @@
+<!DOCTYPE html>
+<html lang="ko" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.43" />
+    <meta name="description" content="hugo contents for keyolk.github.io">
+<meta name="author" content="keyolk">
+
+    <link rel="shortcut icon" href="https://keyolk.github.io/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="https://keyolk.github.io/images/favicon.png" type="image/x-icon" />
+
+    <title>kubernetes :: Personal Documentation</title>
+    
+    
+    <link href="https://keyolk.github.io/css/nucleus.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/font-awesome.min.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/hybrid.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/featherlight.min.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/perfect-scrollbar.min.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/horsey.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/theme.css?1551920893" rel="stylesheet">
+    <link href="https://keyolk.github.io/css/hugo-theme.css?1551920893" rel="stylesheet">
+    
+      <link href="https://keyolk.github.io/css/theme-blue.css?1551920893" rel="stylesheet">
+    
+
+    <script src="https://keyolk.github.io/js/jquery-2.x.min.js?1551920893"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5222442308579087",
+    enable_page_level_ads: true
+  });
+</script>
+
+  </head>
+  <body class="" data-url="/system/container/kubernetes/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      
+<a href="https://keyolk.github.io/" style="color: white; margin-top:10px;">
+  <div style="margin-top:5px; font-size: 25px;"><b>keyolk</b></div>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="https://keyolk.github.io/js/lunr.min.js?1551920893"></script>
+<script type="text/javascript" src="https://keyolk.github.io/js/horsey.js?1551920893"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/keyolk.github.io";
+    
+</script>
+<script type="text/javascript" src="https://keyolk.github.io/js/search.js?1551920893"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/workspace/" title="Workspace" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/workspace/">
+          Workspace
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/fish/" title="fish" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/fish/">
+        fish
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/proxy/" title="proxy" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/proxy/">
+        proxy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/vi/" title="vi" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/vi/">
+        vi
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/blog/" title="blog" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/blog/">
+        blog
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/gcloud/" title="gcloud" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/gcloud/">
+        gcloud
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/personal/" title="personal" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/personal/">
+        personal
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/workspace/prefix/" title="prefix" class="dd-item ">
+        <a href="https://keyolk.github.io/workspace/prefix/">
+        prefix
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/algorithm/" title="Algorithm" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/algorithm/">
+          Algorithm
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/algorithm/datastructure/" title="datastructure" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/algorithm/datastructure/">
+          datastructure
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/balanced_tree/" title="balanced tree" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/balanced_tree/">
+        balanced tree
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/heap/" title="heap" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/heap/">
+        heap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/priority_queue/" title="priority queue" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/priority_queue/">
+        priority queue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/queue/" title="queue" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/queue/">
+        queue
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/stack/" title="stack" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/stack/">
+        stack
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/tree/" title="tree" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/tree/">
+        tree
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/datastructure/graph/" title="graph" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/datastructure/graph/">
+        graph
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/algorithm_pattern/" title="algorithm pattern" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/algorithm_pattern/">
+        algorithm pattern
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/gc/" title="gc" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/gc/">
+        gc
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/sorting/" title="sorting" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/sorting/">
+        sorting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/network/" title="network" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/network/">
+        network
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/computational_geometry/" title="computational geometry" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/computational_geometry/">
+        computational geometry
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/string_matching/" title="string matching" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/string_matching/">
+        string matching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/mathematics/" title="mathematics" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/mathematics/">
+        mathematics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/algorithm/etc/" title="etc" class="dd-item ">
+        <a href="https://keyolk.github.io/algorithm/etc/">
+        etc
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/architecture/" title="Architecture" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/architecture/">
+          Architecture
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/architecture/database/" title="database" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/architecture/database/">
+          database
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/database/rdb/" title="rdb" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/database/rdb/">
+        rdb
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/database/nosql/" title="nosql" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/database/nosql/">
+        nosql
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/monitoring/" title="monitoring" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/monitoring/">
+        monitoring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/architecture/distributed_system/" title="distributed system" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/architecture/distributed_system/">
+          distributed system
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/bully/" title="bully" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/bully/">
+        bully
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/gossip/" title="gossip" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/gossip/">
+        gossip
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/paxos/" title="paxos" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/paxos/">
+        paxos
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/raft/" title="raft" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/raft/">
+        raft
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/distributed_system/zab/" title="zab" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/distributed_system/zab/">
+        zab
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/msa/" title="msa" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/msa/">
+        msa
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/architecture/serverless/" title="serverless" class="dd-item ">
+        <a href="https://keyolk.github.io/architecture/serverless/">
+        serverless
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/system/" title="System" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/">
+          System
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/system/storage/" title="Storage" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/storage/">
+          Storage
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/storage/raid/" title="raid" class="dd-item ">
+        <a href="https://keyolk.github.io/system/storage/raid/">
+        raid
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/system/virtual_machine/" title="Virtual Miachine" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/virtual_machine/">
+          Virtual Miachine
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/system/container/" title="Container" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/container/">
+          Container
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/network/" title="network" class="dd-item ">
+        <a href="https://keyolk.github.io/system/container/network/">
+        network
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/security/" title="security" class="dd-item ">
+        <a href="https://keyolk.github.io/system/container/security/">
+        security
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/inside/" title="inside" class="dd-item ">
+        <a href="https://keyolk.github.io/system/container/inside/">
+        inside
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/kubernetes/" title="kubernetes" class="dd-item active">
+        <a href="https://keyolk.github.io/system/container/kubernetes/">
+        kubernetes
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/container/standard/" title="standard" class="dd-item ">
+        <a href="https://keyolk.github.io/system/container/standard/">
+        standard
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/system/linux/" title="linux" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/system/linux/">
+          linux
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/criu/" title="criu" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/criu/">
+        criu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/cgroup/" title="cgroup" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/cgroup/">
+        cgroup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/metric/" title="metric" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/metric/">
+        metric
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/namespace/" title="namespace" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/namespace/">
+        namespace
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/proxy/" title="proxy" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/proxy/">
+        proxy
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/linux/vagrant/" title="vagrant" class="dd-item ">
+        <a href="https://keyolk.github.io/system/linux/vagrant/">
+        vagrant
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/deadlock/" title="deadlock" class="dd-item ">
+        <a href="https://keyolk.github.io/system/deadlock/">
+        deadlock
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/system/thread/" title="thread" class="dd-item ">
+        <a href="https://keyolk.github.io/system/thread/">
+        thread
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/network/" title="Network" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/network/">
+          Network
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/arp/" title="arp" class="dd-item ">
+        <a href="https://keyolk.github.io/network/arp/">
+        arp
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/dns/" title="dns" class="dd-item ">
+        <a href="https://keyolk.github.io/network/dns/">
+        dns
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/http/" title="http" class="dd-item ">
+        <a href="https://keyolk.github.io/network/http/">
+        http
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/osi7/" title="osi7" class="dd-item ">
+        <a href="https://keyolk.github.io/network/osi7/">
+        osi7
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/network/virtual_network/" title="virtual network" class="dd-item ">
+        <a href="https://keyolk.github.io/network/virtual_network/">
+        virtual network
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/security/" title="Security" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/security/">
+          Security
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/security/vulnerability/" title="vulnerability" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/security/vulnerability/">
+          vulnerability
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/security/vulnerability/cve-2016-9962/" title="CVE-2016-9962" class="dd-item ">
+        <a href="https://keyolk.github.io/security/vulnerability/cve-2016-9962/">
+        CVE-2016-9962
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/security/openscap/" title="openscap" class="dd-item ">
+        <a href="https://keyolk.github.io/security/openscap/">
+        openscap
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/security/rootkit/" title="rootkit" class="dd-item ">
+        <a href="https://keyolk.github.io/security/rootkit/">
+        rootkit
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/language/" title="Language" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://keyolk.github.io/language/">
+          Language
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language/functional_programming/" title="functional programming" class="dd-item ">
+        <a href="https://keyolk.github.io/language/functional_programming/">
+        functional programming
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language/lambda/" title="lambda" class="dd-item ">
+        <a href="https://keyolk.github.io/language/lambda/">
+        lambda
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language/regular_expression/" title="regular expression" class="dd-item ">
+        <a href="https://keyolk.github.io/language/regular_expression/">
+        regular expression
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/language/shellscript/" title="shellscript" class="dd-item ">
+        <a href="https://keyolk.github.io/language/shellscript/">
+        shellscript
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3></h3>
+        <ul>
+          
+              <li class="" role=""> 
+                  <a class="padding" href="https://github.com/keyolk"><i class='fa fa-github'></i> GitHub</a>
+              </li>
+          
+              <li class="" role=""> 
+                  <a class="padding" href="https://linkedin.com/in/keyolk"><i class='fa fa-linkedin'></i> LinkedIn</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable sticky-parent">
+              
+              <div class="sticky-spacer">
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" href="http://prose.io/#keyolk/keyolk.github.io/edit/hugo/content/system/container/kubernetes.md" target="blank">
+                      <i class="fa fa-code-fork"></i>
+                      
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='https://keyolk.github.io/'>keyolk's page</a> > <a href='https://keyolk.github.io/system/'>System</a> > <a href='https://keyolk.github.io/system/container/'>Container</a> > kubernetes
+          
+         
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#intro">Intro</a></li>
+<li><a href="#deployment">Deployment</a>
+<ul>
+<li><a href="#multi-cloud">Multi Cloud</a></li>
+<li><a href="#self-hosting">Self Hosting</a></li>
+</ul></li>
+<li><a href="#network">Network</a>
+<ul>
+<li><a href="#endpoints">Endpoints</a></li>
+</ul></li>
+<li><a href="#secret">Secret</a>
+<ul>
+<li><a href="#secret-encryption">Secret Encryption</a></li>
+<li><a href="#tls-assets">TLS Assets</a></li>
+</ul></li>
+<li><a href="#auth">Auth</a>
+<ul>
+<li>
+<ul>
+<li><a href="#authn">AuthN</a></li>
+<li><a href="#authz">AuthZ</a></li>
+<li><a href="#todo">ToDo</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>kubernetes</h1>
+          
+
+        
+
+
+
+<h2 id="intro">Intro</h2>
+
+<p>Production 환경에서,
+Kubernetes를 어떻게 배포/구성할지에 대해 정리.</p>
+
+<p>아래 사항에 대해서 Best Practice 찾아 기술.</p>
+
+<ul>
+<li>deploy</li>
+<li>availability</li>
+<li>security</li>
+<li>performance</li>
+</ul>
+
+<h2 id="deployment">Deployment</h2>
+
+<p>Multi Cloud 환경과 같이 infra 제공자가 다양한 경우
+반복적으로 Cluster를 배포하게된다.</p>
+
+<p>Process에 따라 Kubernetes의 Cluster Federation도 활용될 수 있으며
+이를 고려한 배포가 이뤄져야 한다.</p>
+
+<p>전반적인 배포 제어는 Ansible과 같은 도구를 활용하여 자동화한다.</p>
+
+<h3 id="multi-cloud">Multi Cloud</h3>
+
+<p>Cluster를 배포할때,
+Multi Cloud를 통한 Affinity를 고려하자면 Hashicorp의 Terraform과 같은
+추상화된 Cloud Management Tool을 사용하는게 좋다.</p>
+
+<p>instance가 확보되고 나면 cloud-config를 같은 도구를 활용하여
+일관성 있게 각 instance를 초기화하도록 한다.</p>
+
+<h3 id="self-hosting">Self Hosting</h3>
+
+<p>Self Hosted Cluster를 구성하면 배포 이후 Cluster의 변경사항을 관리하는데 용이하다.
+kubelet은 독립적으로 Pod을 hosting 할 수 있으므로 이를 이용해
+apiserver, control manager, proxy를 구동하도록 한다.</p>
+
+<p>binary는 hyperkube 같은 묶음을 활용하면 일관성있게 binary를 관리할 수 있다.
+hyperkube image에 대한 배포도 container image를 활용하되
+kubelet을 실행하는 container engine이 Resilency한지 따져봐야한다.
+Docker 경우 최근 version에서 이를 지원하며
+그외 CoreOS의 RKT나 LXC 등을 활용할 수 있다.</p>
+
+<h2 id="network">Network</h2>
+
+<p>Self Hosted Cluster를 구성할땐 CNI network을 사용해야한다.
+CNI를 활용할 경우 kubelet은
+cluster의 KV storage에 직접 접근하여 network fabric을 구성한다.</p>
+
+<p>CNI option으론 Calico + Flannel 조합으로 VxLan을 많이 사용한다.
+아래의 Canal을 통해 쉽게 배포 할 수 있다.</p>
+
+<p><a href="https://github.com/projectcalico/canal">https://github.com/projectcalico/canal</a></p>
+
+<p>Canal은 새로운 Kubelet이 등록되면 DaemonSet으로 필요한 Network Fabric Asset을
+전달하도록 되어있다.</p>
+
+<p>Network에 대한 변경이 이뤄지면 일관적으로 전체 cluster node에 이를 전파할 수 있다.</p>
+
+<h3 id="endpoints">Endpoints</h3>
+
+<p>kubelet에서 kube apiserver 및 KV storage에 일관적으로 접속이 가능해야한다.
+내부 load balancer를 구성하여 connection을 보장해 준다.</p>
+
+<p>Master와 KV storage는 HA하게 구성한다.</p>
+
+<h2 id="secret">Secret</h2>
+
+<p>Kuberntes에서 Secret 관리와 관련된 내용을 정리한다.</p>
+
+<p><a href="http://kubernetes.io/docs/user-guide/secrets/">http://kubernetes.io/docs/user-guide/secrets/</a></p>
+
+<p>Kubernetes에선 자체적으로 Secret System을 가지고 있으나
+data는 KV stroage 내에서 암호화 되지 않은채로 존재한다.</p>
+
+<p>즉, etcd에 대한 접근 권한이 있으면
+모든 secret을 가져갈 수 있다.</p>
+
+<p>etcd 자체적으로 제공하는 auth는 client certificates가 있고
+이에 대해서 ACL도 제공하므로 이를 이용하면 보다 secure하게 이를 관리할 수 있으나,
+근본적으로 data 유출에 대한 위험은 남아있게된다.</p>
+
+<p>앞서 보았듯 self hosting 하게 cluster를 구성하는경우 network를 CNI로 구성하게 되는데
+kubelet이 직접 KV storage에 접근하게 된다.</p>
+
+<h3 id="secret-encryption">Secret Encryption</h3>
+
+<p>모든 kubelet node에서 etcd에 대해 접근 권한을 갖게되는것이므로 유의해야한다.</p>
+
+<p>secret data를 암호화하기 위한 option으로 vault가 많이 고려된다.
+아직 kubernetes에서 secret에 대해 plugin 형태의 interface를 제고하고 있지 않아
+사용하기 용이한 implementation은 아직 없으나 kubernetes에 맞춘 vault controller를 제공하는
+proeject가 몇가지 존재한다.</p>
+
+<p>아래는 vault와 관련된 link이다.</p>
+
+<ul>
+<li>Hashicorp Vault : <a href="https://github.com/hashicorp/vault">https://github.com/hashicorp/vault</a>
+
+<ul>
+<li>dicussions : <a href="https://github.com/kubernetes/kubernetes/issues/10439#issuecomment-263954184">https://github.com/kubernetes/kubernetes/issues/10439#issuecomment-263954184</a></li>
+<li>generate PKI stufss for kubernetes components : <a href="https://www.digitalocean.com/company/blog/vault-and-kubernetes/">https://www.digitalocean.com/company/blog/vault-and-kubernetes/</a></li>
+<li>deploy vault in kubernetes : <a href="http://www.devoperandi.com/vault-in-kubernetes-take-2/">http://www.devoperandi.com/vault-in-kubernetes-take-2/</a></li>
+<li>vault integration with kubernetes pod</li>
+<li><a href="https://github.com/Boostport/kubernetes-vault">https://github.com/Boostport/kubernetes-vault</a></li>
+<li><a href="https://github.com/kelseyhightower/vault-controller">https://github.com/kelseyhightower/vault-controller</a></li>
+</ul></li>
+</ul>
+
+<h3 id="tls-assets">TLS Assets</h3>
+
+<p>위의 Vault를 통해 Kubernetes Component 들이 사용하는 TLS Asset들을 관리할 수 있다.
+Consul + Vault + Consul Template 조합으로 pki backend를 사용한다.</p>
+
+<p>다만 이를 kubelet 하나로 Self Hosted 하게 구성하려고 할때,
+당장 편리해보이는 방법을 모르겠다.</p>
+
+<p>apiserver를 구성하는 kubelet에 vault와 consul template을 같이 올리는 방법도 있을것 같으나
+좀더 고민이 필요하다.</p>
+
+<h2 id="auth">Auth</h2>
+
+<p>Kubernetes Auth와 관련,
+대략적인 내용과 link들을 정리한다.</p>
+
+<ul>
+<li>Authentication : <a href="http://kubernetes.io/docs/admin/authentication/">http://kubernetes.io/docs/admin/authentication/</a>
+
+<ul>
+<li>Basic Auth</li>
+<li>Client Certificates</li>
+<li>Static Token</li>
+<li>Webhook Token</li>
+<li>KeyStone Password</li>
+<li>Authenticating Proxy</li>
+<li>OIDC Token :</li>
+<li>Google OIDC</li>
+<li>Auth0</li>
+<li>CoreOS Dex :  <a href="https://github.com/coreos/dex">https://github.com/coreos/dex</a>
+
+<ul>
+<li>Google OIDC : <a href="https://github.com/coreos/dex/blob/master/Documentation/openid-connect.md">https://github.com/coreos/dex/blob/master/Documentation/openid-connect.md</a></li>
+<li>Github OAuth : <a href="https://github.com/coreos/dex/blob/master/Documentation/github-connector.md">https://github.com/coreos/dex/blob/master/Documentation/github-connector.md</a></li>
+<li>LDAP : <a href="https://github.com/coreos/dex/blob/master/Documentation/ldap-connector.md">https://github.com/coreos/dex/blob/master/Documentation/ldap-connector.md</a></li>
+</ul></li>
+<li>Redhat KeyCloak : <a href="http://www.devoperandi.com/kubernetes-authentication-openid-connect/">http://www.devoperandi.com/kubernetes-authentication-openid-connect/</a></li>
+<li>CloudFoundry UAA : <a href="https://apigee.com/about/tags/kubernetes">https://apigee.com/about/tags/kubernetes</a></li>
+</ul></li>
+<li>Authorization : <a href="http://kubernetes.io/docs/admin/authorization/">http://kubernetes.io/docs/admin/authorization/</a>
+
+<ul>
+<li>ABAC</li>
+<li>RBAC : <a href="https://github.com/uruddarraju/kubernetes-rbac-policies">https://github.com/uruddarraju/kubernetes-rbac-policies</a></li>
+<li>Webhook</li>
+<li>bitesize-authz-webhook : <a href="https://github.com/pearsontechnology/bitesize-authz-webhook">https://github.com/pearsontechnology/bitesize-authz-webhook</a></li>
+</ul></li>
+</ul>
+
+<h4 id="authn">AuthN</h4>
+
+<p>CoreOS Dex의 경우 JBoss의 Keyclak이나 CloudFoundry의 UAA에 비해서 전반적으로 구조가 단순하고 배포하기 용이하다.
+다른 Solution에 비해 덜성숙된 느낌을 같지만 사용함에 문제가 없었다.
+별도 Client를 구성 해야하는 번잡함이 있긴하다.</p>
+
+<h4 id="authz">AuthZ</h4>
+
+<p>RBAC이 현재로는 apiserver의 재기동 없이 dynamic하게 policy를 적용할 수 있는 거의 유일한 option 이다.
+Webhook을 통해 외부 instance에서 처리하는 방법도 있으나
+별도로 자체 구축해야하며, 알려진 opensource 중에선 뚜렷이 눈에 띄는게 없었다.</p>
+
+<h4 id="todo">ToDo</h4>
+
+<p>Login : kubectl의 경우 아직 login관련된 feature가 없다 Token을 kubeConfig에 따로 전달해주어야한다.
+별도 CLI wrapper를 사용할 수 있다.</p>
+
+<p>RBAC : User record가 생성될때 이에따라 필요한 RBAC policy를 생성할 controller가 필요하다.
+없을 시 수동으로 처리해줘야한다.</p>
+
+<hr>
+<footer class=" footline">
+  
+  written by <i class='fa fa-user'></i> <a href="mailto:keyolk@gmail.com">Chanhun Jeong</a>
+  
+  on <i class='fa fa-calendar'></i> 28/09/2017
+  
+  
+</footer>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'keyolk';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+        </div> 
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="https://keyolk.github.io/system/container/inside/" title="inside"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="https://keyolk.github.io/system/container/standard/" title="standard" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="https://keyolk.github.io/js/clipboard.min.js?1551920893"></script>
+    <script src="https://keyolk.github.io/js/perfect-scrollbar.min.js?1551920893"></script>
+    <script src="https://keyolk.github.io/js/perfect-scrollbar.jquery.min.js?1551920893"></script>
+    <script src="https://keyolk.github.io/js/jquery.sticky-kit.min.js?1551920893"></script>
+    <script src="https://keyolk.github.io/js/featherlight.min.js?1551920893"></script>
+    <script src="https://keyolk.github.io/js/html5shiv-printshiv.min.js?1551920893"></script>
+    <script src="https://keyolk.github.io/js/highlight.pack.js?1551920893"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="https://keyolk.github.io/js/modernizr.custom.71422.js?1551920893"></script>
+    <script src="https://keyolk.github.io/js/learn.js?1551920893"></script>
+    <script src="https://keyolk.github.io/js/hugo-learn.js?1551920893"></script>
+
+    <link href="https://keyolk.github.io/mermaid/mermaid.css?1551920893" type="text/css" rel="stylesheet" />
+    <script src="https://keyolk.github.io/mermaid/mermaid.js?1551920893"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
+
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-77710672-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+

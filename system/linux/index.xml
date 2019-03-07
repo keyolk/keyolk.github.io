@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Personal Documentation</title>
+    <link>https://keyolk.github.io/system/linux/</link>
+    <description>Recent content in linux on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 28 Sep 2017 15:15:25 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/system/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>criu</title>
+      <link>https://keyolk.github.io/system/linux/criu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/criu/</guid>
+      <description>Checkpoint &amp;amp; Restore in Userspace
+Usage $ criu dump -t ${PID} -vvv -o dump.log &amp;amp;&amp;amp; echo OK $ criu restore -d -vvv -o restore.log &amp;amp;&amp;amp; echo OK $ criu dump -vvvv -o dump.log -t ${PID --shell-job &amp;amp;&amp;amp; echo OK $ criu restore -vvvv -o restore.log --shell-job &amp;amp;&amp;amp; echo OK  Details  ptrace mmap parasite code injection TCP repair mode  Dump  Stop the tasks  Freez by PTRACE_SEIZE or cgroup freezer Lock network  Collect process information  proc files parasite injection Credential, memory contents, signals  Dump pages  memory pages copied via vmsplice and splice syscalls   Restore  tree  Issues  External Resources  Unix socket TCP Shell Jobs File locks Bind mounts  Device Accesses  /dev/null, /dev/net/tun X applications  ETC  File System SysV IPC Nested namespace or cgroup   Reference  https://media.</description>
+    </item>
+    
+    <item>
+      <title>cgroup</title>
+      <link>https://keyolk.github.io/system/linux/cgroup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/cgroup/</guid>
+      <description>Process group별 Management를 제공하는 I/F이다.
+Cgroup자체는 Process Grouping만을 수행하며, Resource에 대한 관리는 Subsystem을 통해 이뤄진다. Cgroup으로 만들어진 Process Group은 hierachy하게 만들어질 수 있다.
+결과적으로 Cgroup을 통해 다음과 같은 기능을 제공한다.
+ limiting : Group에 대한 resoure 사용 제한.  prioritization : CPU 및 disk I/O 자원에 대한 우선순위 부여.  accounting : System에서 사용하는 resource 측정.  control : Group별 contol 제공.  sysfs나 procfs와 같이 low-level filesystem interface로 구현되며, 모든 cgroups 관련 action은 filesystem을 통해서 이뤄진다.</description>
+    </item>
+    
+    <item>
+      <title>metric</title>
+      <link>https://keyolk.github.io/system/linux/metric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/metric/</guid>
+      <description> CPU Load Memory I/O Net RX/TX </description>
+    </item>
+    
+    <item>
+      <title>namespace</title>
+      <link>https://keyolk.github.io/system/linux/namespace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/namespace/</guid>
+      <description>Namespace를 통해 Kernel 내 Global Resource에 대해 Process 별로 Partitioning을 제공한다. 기본적으로 Parent Process의 Namespace를 Child 에서 상속받는다.
+   Namespace Constant Related Resource Supporting Version     Mount CLONE_NEWNS Mount Points 2.4.19   UTS CLONE_NEWUTS Hostname, NIS domain name 2.6.24   IPC CLONE_NEWIPC SystemV IPC, POSIX Message Queue 2.6.24   PID CLONE_NEWPID Process IDs 2.6.24   Net CLONE_NEWNET Network Stacks 2.6.29   User CLONE_NEWUSER Network Stacks 3.</description>
+    </item>
+    
+    <item>
+      <title>proxy</title>
+      <link>https://keyolk.github.io/system/linux/proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/proxy/</guid>
+      <description>Proxy Auto Config 대부분의 Browser에서 지원한다. javascript syntax를 사용한다.
+CLI에서 지원을 잘 안하는것 같다.
+ libproxy가 이를 지원하기위해 개발되고 있다. https://libproxy.github.io/libproxy
+ pacparser를 사용하면 pac으로 부터 URL에 해당되는 Proxy 정보를 가져올 수 있다. https://github.com/pacparser/pacparser
+  SSH Proxy  OpenSSH를 활용하여 간단한 SOCKS proxy를 만들 수 있다. https://keyolk.github.io/2016/06/30/Open-S-S-H.html
+ SOCKS proxy를 사용하지 못하는 application에서는 tsocks나 proxychains, sshuttle을 사용한다.
+  Utilities  tsocks를 사용하면 SOCKS proxy를 지원하지 않는 application에서도 이를 사용할 수 있게 할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>vagrant</title>
+      <link>https://keyolk.github.io/system/linux/vagrant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/linux/vagrant/</guid>
+      <description>Remote Vagrant Setup Setup libvirtd /usr/sbin/useradd -c &#39;HAL daemon&#39; -u 68 -s /sbin/nologin -r -d &#39;/&#39; haldaemon /usr/sbin/useradd -c &#39;dbus&#39; -u 69 -s /sbin/nologin -r -d &#39;/&#39; dbus mount -o ro,remount /sys; mount -o rw,remount /sys mount -t mqueue none /dev/mqueue service messagebus start service libvirtd start  $ virsh -c qemu:///system list  Install Vagarnt on Client wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.rpm rpm -ivh vagrant*.rpm vagrant plugin install vagrant-libvirt --plugin-version 0.0.35 vagrant init fedora/24-cloud-base vagrant up --provider=libvirt  Sample Vagrantfile INSTANCE_PREFIX=&amp;quot;centos&amp;quot; $num_instance = 3 $box = &amp;quot;centos/7&amp;quot; $vm_cpus = 2 $vm_memory = 1024 Vagrant.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workspace on Personal Documentation</title>
+    <link>https://keyolk.github.io/workspace/</link>
+    <description>Recent content in Workspace on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 23 Jul 2018 23:44:56 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/workspace/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>fish</title>
+      <link>https://keyolk.github.io/workspace/fish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/fish/</guid>
+      <description> slow startup 보통 set -x를 잘못써서 특정 global variable의 길이가 너무 길어지는게 문제가 된다.
+&amp;ldquo;fish_user_paths&amp;rdquo; 길이를 체크해볼 필요가 있다.
+$ set -U # 확인 후 $ set -e fish_user_paths # 필요 시 삭제  </description>
+    </item>
+    
+    <item>
+      <title>proxy</title>
+      <link>https://keyolk.github.io/workspace/proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/proxy/</guid>
+      <description>Intro 사무실용 환경 설정에 필요한 Step 정리.
+ Corporation Firewall에 따른 개인용 Transparent Proxy. 이종 OS간 Keyboard/Mouse Sharing. 내부 가상화 환경. SSH.  OpenSSH Remote Host Configuration File을 통해 Remote Host를 관리하면 편하다.
+$ cat ~/.ssh/config  Host remote1 Hostname 1.2.3.4 User root IdentityFile remote1 ForwardX11 yes ProxyCommand ssh proxy nc %h %p  위의 예는 SSH를 연결하면서 X11Forward와 Dynamic Proxy 연결을 같이 한다.
+IdentityFile을 별도로 만들경우 아래와 같이 사용 가능하다.</description>
+    </item>
+    
+    <item>
+      <title>vi</title>
+      <link>https://keyolk.github.io/workspace/vi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/vi/</guid>
+      <description>  filetype syntax omnifunc  https://medium.com/@schtoeffel/you-don-t-need-more-than-one-cursor-in-vim-2c44117d51db
+multi cursor : / cgn .
+easy align : ga
+surround : cs ds ysiw yss
+Slow startup time profile 해보자
+$ vim ${FILE_TO_OPEN} --startuptime profile  </description>
+    </item>
+    
+    <item>
+      <title>blog</title>
+      <link>https://keyolk.github.io/workspace/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/blog/</guid>
+      <description>Intro Blogging 환경 구성을 위한 정리.
+ Hosting: GitHub Pages Site Generator: Hugo Theme: Learn Commenting: Disqus Analytics: Google Analytics Editor: Prose.io CI: Travis CI Google Adsence  GitHub Pages GitHub Pages을 통해 GitHub에 static site대한 hosting을 받을 수 있다.
+User Page를 만드려면 간단히 &amp;ldquo;${USER_NAME}.github.io&amp;rdquo;로 repository를 만들고 여기에 static web resource를 담으면 된다.
+Hugo Jekyll을 많이 쓰는데 Hugo가 redering 속도가 빠르고 보다 간편한것 같다.
+Install arch에선 User Repository형태로 제공된다.</description>
+    </item>
+    
+    <item>
+      <title>gcloud</title>
+      <link>https://keyolk.github.io/workspace/gcloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/gcloud/</guid>
+      <description> Intro $ curl https://sdk.cloud.google.com | bash  exec -l $SHELL  $ gcloud auth login  GKE $ gcloud components update kubectl  $ gcloud config set project keyolk $ glcoud config set compute/zone asia-east1-a  $ gcloud config set container/cluster keyolk  $ gcloud config list  $ gcloud container clusters create keyolk --num-nodes 2 --machine-type g1-small  $ gcloud compute instances list  $ kubectl run tomcat --image=tomcat  $ gcloud container clusters delete keyolk  </description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>https://keyolk.github.io/workspace/personal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/personal/</guid>
+      <description>Intro 개인 Desktop Environment 구축하기 위해 필요한 Step 정리. 현재 사용 중인 System 기준
+ H/W : Chrombook Pixel2 LS OS : ApricityOS Desktop : Gnome3 Terminal : zsh + tmux + nvim + powerline + fzf  Terminal 관련 상세 설정은 여기에서 확인할 수 있다.
+Chromebook  enable developer mode enable SeaBIOS  ApricityOS Install https://apricityos.com/download
+Kernel https://github.com/raphael/linux-samus
+Package #!/bin/bash git submodule update --init --recursive sudo pacman -Syy zsh tmux neovim git xclip meld python-pip sudo pacman -Syy python-neovim python2-neovim sudo pacman -Syy fzf the_silver_searcher sudo pacman -Syy docker vagrant # install python virtualenv sudo pacman -Syy pythob-virtualenv python2-virtualenv # install gvm to manage golang version and workspace zsh &amp;lt; &amp;lt;(curl -s -S -L https://raw.</description>
+    </item>
+    
+    <item>
+      <title>prefix</title>
+      <link>https://keyolk.github.io/workspace/prefix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/workspace/prefix/</guid>
+      <description>Intro Root 권한이 없는 System에서 개인 workspace를 만들기위해 필요한 package를 설치하기위해 Gentoo Prefix를 사용.
+관련 Step 정리.
+$ wget https://gitweb.gentoo.org/repo/proj/prefix.git/plain/scripts/bootstrap-prefix.sh $ chmod +x bootstrap-prefix.sh $ ./bootstrap-prefix.sh  RAP libc version이 낮은 system에선 prefix가 정상적으로 bootstrap 되지 않는다. RAP script를 사용하면 최신 libc부터 시작하여 prefix를 bootstrap 해준다.
+$ wget http://dev.gentoo.org/~heroxbd/bootstrap-rap.sh $ chmod +x bootstrap-rap.sh $ ./bootstrap-rap.sh  bash version이 낮은 경우 bash 부터 bootstrap 해야한다. https://wiki.gentoo.org/wiki/Project:Prefix/Bootstrap
+$ wget https://gitweb.gentoo.org/repo/proj/prefix.git/plain/scripts/bootstrap-bash.sh $ chmod +x bootstrap-bash.</description>
+    </item>
+    
+  </channel>
+</rss>

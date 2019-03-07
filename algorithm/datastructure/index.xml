@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>datastructure on Personal Documentation</title>
+    <link>https://keyolk.github.io/algorithm/datastructure/</link>
+    <description>Recent content in datastructure on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 24 Jul 2018 23:48:48 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/algorithm/datastructure/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>balanced tree</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/balanced_tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/balanced_tree/</guid>
+      <description>Splay  Splay ZigZig ZigZag Rotate  // The code is adopted from http://goo.gl/SDH9hH #include&amp;lt;stdio.h&amp;gt; #include&amp;lt;stdlib.h&amp;gt; // An AVL tree node struct node { int key; struct node *left, *right; }; /* Helper function that allocates a new node with the given key and NULL left and right pointers. */ struct node* newNode(int key) { struct node* node = (struct node*)malloc(sizeof(struct node)); node-&amp;gt;key = key; node-&amp;gt;left = node-&amp;gt;right = NULL; return (node); } // A utility function to right rotate subtree rooted with y // See the diagram given above.</description>
+    </item>
+    
+    <item>
+      <title>heap</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/heap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/heap/</guid>
+      <description>// C++ program for implementation of Heap Sort #include &amp;lt;iostream&amp;gt; using namespace std; // To heapify a subtree rooted with node i which is // an index in arr[]. n is size of heap void heapify(int arr[], int n, int i) { int largest = i; // Initialize largest as root int l = 2*i + 1; // left = 2*i + 1 int r = 2*i + 2; // right = 2*i + 2 // If left child is larger than root if (l &amp;lt; n &amp;amp;&amp;amp; arr[l] &amp;gt; arr[largest]) largest = l; // If right child is larger than largest so far if (r &amp;lt; n &amp;amp;&amp;amp; arr[r] &amp;gt; arr[largest]) largest = r; // If largest is not root if (largest !</description>
+    </item>
+    
+    <item>
+      <title>priority queue</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/priority_queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/priority_queue/</guid>
+      <description> Intro </description>
+    </item>
+    
+    <item>
+      <title>queue</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/queue/</guid>
+      <description>Intro Implementation /*static circular queue*/ #include &amp;lt;stdio.h&amp;gt; #define size 5 void insertq(int[], int); void deleteq(int[]); void display(int[]); int front = - 1; int rear = - 1; int main() { int n, ch; int queue[size]; do { printf(&amp;quot;\n\n Circular Queue:\n1. Insert \n2. Delete\n3. Display\n0. Exit&amp;quot;); printf(&amp;quot;\nEnter Choice 0-3? : &amp;quot;); scanf(&amp;quot;%d&amp;quot;, &amp;amp;ch); switch (ch) { case 1: printf(&amp;quot;\nEnter number: &amp;quot;); scanf(&amp;quot;%d&amp;quot;, &amp;amp;n); insertq(queue, n); break; case 2: deleteq(queue); break; case 3: display(queue); break; } }while (ch !</description>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/stack/</guid>
+      <description>Intro Implementation /* initialize stack pointer */ void init(int *top) { *top = 0; } /* push an element into stack precondition: the stack is not full */ void push(int *s,int* top, int element) { s[(*top)++] = element; } /* remove an element from stack precondition: stack is not empty */ int pop(int *s,int *top) { return s[--(*top)]; } /* return 1 if stack is full, otherwise return 0 */ int full(int *top,const int size) { return *top == size ?</description>
+    </item>
+    
+    <item>
+      <title>tree</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/tree/</guid>
+      <description> Intro Tree Traversal  Exhaustive Branch and Bound  Tree Search  In/Pre/Post Order Binary/Ternary  Least Common Ancestor  Range Minimum Query  Binary Tree N Tree </description>
+    </item>
+    
+    <item>
+      <title>graph</title>
+      <link>https://keyolk.github.io/algorithm/datastructure/graph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/datastructure/graph/</guid>
+      <description>Intro  Topological Sort  Minmum Spanning Tree  Prim Kruskal  Graph Traversal  Depth First Search Breadth First Search Best Firset Search Hamiltionian Path Eulerian Path  Shortest Path  Floyd-Warshal Dijkstra Bellman-Ford  Implementation Adjust Matrix Adjust List // A simple representation of graph using STL #include&amp;lt;bits/stdc++.h&amp;gt; using namespace std; // A utility function to add an edge in an // undirected graph. void addEdge(vector&amp;lt;int&amp;gt; adj[], int u, int v) { adj[u].</description>
+    </item>
+    
+  </channel>
+</rss>

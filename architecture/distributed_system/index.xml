@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>distributed system on Personal Documentation</title>
+    <link>https://keyolk.github.io/architecture/distributed_system/</link>
+    <description>Recent content in distributed system on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 23 Jul 2018 21:30:41 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/architecture/distributed_system/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>bully</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/bully/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/bully/</guid>
+      <description> Bully </description>
+    </item>
+    
+    <item>
+      <title>gossip</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/gossip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/gossip/</guid>
+      <description> Gossip </description>
+    </item>
+    
+    <item>
+      <title>paxos</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/paxos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/paxos/</guid>
+      <description> Paxos </description>
+    </item>
+    
+    <item>
+      <title>raft</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/raft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/raft/</guid>
+      <description> Raft Available Status  Follower Candidate Leader  Process  Leader Election  Voting Randomized Timeouts  Log Replication  Election Timeout - folower -&amp;gt; candidate
+Heartbeat Timeout
+Reference  http://thesecretlivesofdata.com/raft/ https://ramcloud.stanford.edu/wiki/download/attachments/11370504/raft.pdf https://raft.github.io/  </description>
+    </item>
+    
+    <item>
+      <title>zab</title>
+      <link>https://keyolk.github.io/architecture/distributed_system/zab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/distributed_system/zab/</guid>
+      <description> Zap </description>
+    </item>
+    
+  </channel>
+</rss>

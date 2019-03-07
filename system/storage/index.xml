@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Personal Documentation</title>
+    <link>https://keyolk.github.io/system/storage/</link>
+    <description>Recent content in Storage on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 23 Jul 2018 21:16:18 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/system/storage/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>raid</title>
+      <link>https://keyolk.github.io/system/storage/raid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/storage/raid/</guid>
+      <description>RAID Redundat Array of Inexpensive Disk
+Hardware RAID &amp;amp; Software RAID Striping &amp;amp; Mirroring Striping: 논리적으로 연속된 data segment를 물리적으로 여러개의 디스크에 RR 방식으로 나눠 저장.
+Mirroring: Data Replicatin
+Architecture RAID 0 Striped disk array without fault tolerance
+RAID 1 Mirrroing and duplexing
+RAID 2 Hamming code ECC
+RAID 3 Parallel transfer with parity
+하나의 디스크를 Parity 용으로 사용
+RAID 4 Independent data disk with shared parity disk
+하나의 디스크를 Parity 용으로 사용하 되, 블락 단위로 분산 저장.</description>
+    </item>
+    
+  </channel>
+</rss>

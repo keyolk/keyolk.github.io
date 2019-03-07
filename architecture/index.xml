@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Architecture on Personal Documentation</title>
+    <link>https://keyolk.github.io/architecture/</link>
+    <description>Recent content in Architecture on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 23 Jul 2018 23:44:56 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/architecture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>monitoring</title>
+      <link>https://keyolk.github.io/architecture/monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/monitoring/</guid>
+      <description>Push vs Pull  Target discovery Who initiates metric transfer  Reference http://www.boxever.com/push-vs-pull-for-monitoring/</description>
+    </item>
+    
+    <item>
+      <title>msa</title>
+      <link>https://keyolk.github.io/architecture/msa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/msa/</guid>
+      <description> Intro MSA, Micro Service Architecutre
+Polyglog </description>
+    </item>
+    
+    <item>
+      <title>serverless</title>
+      <link>https://keyolk.github.io/architecture/serverless/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/serverless/</guid>
+      <description> Intro FAAS, Function as a Service
+Service Provider  lambda by AWS iron.io openwhisk by IBM Bluemix webtask.io nstack formerly stackhut  Framework  Serverless by AWS Apex CloudiaJS  Openrsource Kubernetes  funktion by Fabric fission by Platform9 kubeless  Reference  https://martinfowler.com/articles/serverless.html  </description>
+    </item>
+    
+  </channel>
+</rss>

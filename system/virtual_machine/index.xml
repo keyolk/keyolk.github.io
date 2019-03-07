@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtual Miachine on Personal Documentation</title>
+    <link>https://keyolk.github.io/system/virtual_machine/</link>
+    <description>Recent content in Virtual Miachine on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 23 Jul 2018 21:16:18 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/system/virtual_machine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

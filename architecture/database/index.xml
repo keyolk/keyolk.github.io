@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>database on Personal Documentation</title>
+    <link>https://keyolk.github.io/architecture/database/</link>
+    <description>Recent content in database on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Wed, 25 Jul 2018 00:32:32 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/architecture/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>rdb</title>
+      <link>https://keyolk.github.io/architecture/database/rdb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/database/rdb/</guid>
+      <description> Relational Database
+ACID  Atomicity Consistency Isolation Durability  Normalization  1NF: atomic value 2NF 3NF BCNF  Join Logical Join  innter join outer join cross join  Physical Join  Nested Loop Join Sort Merge Join Hash Match Join  Index </description>
+    </item>
+    
+    <item>
+      <title>nosql</title>
+      <link>https://keyolk.github.io/architecture/database/nosql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/architecture/database/nosql/</guid>
+      <description>NoSQL CAP  Consistency Availability Partition tolerance  각각 조합에 대한 예:  AP: Dynamo, Cassandra, SimpleDB, CouchDB CA: Aster Data, Greenplum CP: BigTable, Hbase, MongoDB, Redis, MemcacheDB  BASE  Basically Available Soft-state Eventually consistency  PACELC  if there is a partition (P) how does the system tradeoff between availability and consistency (A and C); else (E) when the system is running as normal in the absence of partitions, how does the system tradeoff between latency (L) and consistency &amp;copy;?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Container on Personal Documentation</title>
+    <link>https://keyolk.github.io/system/container/</link>
+    <description>Recent content in Container on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 28 Sep 2017 15:32:16 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/system/container/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>network</title>
+      <link>https://keyolk.github.io/system/container/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/network/</guid>
+      <description> Contaienr Network Model 참고하기 좋다.
+ http://murat1985.github.io/kubernetes/cni/2016/05/14/netns-and-cni.html http://murat1985.github.io/kubernetes/cni/2016/05/15/bagpipe-gobgp.html http://murat1985.github.io/kubernetes/cni/2016/05/15/kubernetes.html http://murat1985.github.io/kubernetes/cni/consul/2016/05/26/cni-consul.html http://murat1985.github.io/kubernetes/cni/consul/2016/07/14/cni-consul-impl.html  </description>
+    </item>
+    
+    <item>
+      <title>security</title>
+      <link>https://keyolk.github.io/system/container/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/security/</guid>
+      <description> Compliance Docker 경우 아래와같이 CIS에서 정리한게 있다.
+ 1.6 1.11 1.12  간단한 script를 docker에서 제공한다.
+Vulnerability  Twistlock: https://twistlock.com/ Aqua: https://www.aquasec.com/ Nautilus: https://blog.docker.com/tag/nautilus/ CoreOS Clair: https://github.com/coreos/clair OpenSCAP: https://github.com/OpenSCAP/container-compliance Lynis: https://cisofy.com/lynis/plugins/docker-containers/ Vuls: https://github.com/future-architect/vuls/  Content Trust  Docker Notary: https://github.com/docker/notary  Secret  HashiCorp Vault Square Keywhiz  </description>
+    </item>
+    
+    <item>
+      <title>inside</title>
+      <link>https://keyolk.github.io/system/container/inside/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/inside/</guid>
+      <description>Linux Features  namespace cgroups chroot pivot_root union mount bind mount iptables veth capabilities seccomp LSM  SELinux AppArmor   Linux에서 Container를 구성하는 주요 Kerenl Feature는 위와 같다.
+Simple Container 아래와 같이 간단한 container를 만들어 볼 수 있다. 유사한 project로 bocker가 있다.
+#define _GNU_SOURCE #include &amp;lt;sys/types.h&amp;gt; #include &amp;lt;sys/wait.h&amp;gt; #include &amp;lt;sys/mount.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; #include &amp;lt;stdlib.h&amp;gt; #include &amp;lt;sched.h&amp;gt; #include &amp;lt;signal.h&amp;gt; #include &amp;lt;unistd.h&amp;gt; #define ChkErr(expr) if(expr!=0) { line=__LINE__; ret=expr; goto ErrorExit; } #define STACK_SIZE (1024 * 1024) static char child_stack[STACK_SIZE]; char* const child_args[] = { &amp;quot;/bin/sh&amp;quot;, NULL }; int checkpoint[2]; int ret; int line; void set_map(char* file, int inside_id, int outside_id, int len) { FILE* mapfd = fopen(file, &amp;quot;w&amp;quot;); if(NULL==mapfd) { perror(&amp;quot;open file error&amp;quot;); return; } fprintf(mapfd, &amp;quot;%d %d %d&amp;quot;, inside_id, outside_id, len); fclose(mapfd); } void set_uid_map(pid_t pid, int inside_id, int outside_id, int len) { char file[256]; sprintf(file, &amp;quot;/proc/%d/uid_map&amp;quot;, pid); set_map(file, inside_id, outside_id, len); } void set_gid_map(pid_t pid, int inside_id, int outside_id, int len) { char file[256]; sprintf(file, &amp;quot;/proc/%d/gid_map&amp;quot;, pid); set_map(file, inside_id, outside_id, len); } int child_main(void* arg) { char c; close(checkpoint[1]); printf(&amp;quot; - World !</description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://keyolk.github.io/system/container/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/kubernetes/</guid>
+      <description>Intro Production 환경에서, Kubernetes를 어떻게 배포/구성할지에 대해 정리.
+아래 사항에 대해서 Best Practice 찾아 기술.
+ deploy availability security performance  Deployment Multi Cloud 환경과 같이 infra 제공자가 다양한 경우 반복적으로 Cluster를 배포하게된다.
+Process에 따라 Kubernetes의 Cluster Federation도 활용될 수 있으며 이를 고려한 배포가 이뤄져야 한다.
+전반적인 배포 제어는 Ansible과 같은 도구를 활용하여 자동화한다.
+Multi Cloud Cluster를 배포할때, Multi Cloud를 통한 Affinity를 고려하자면 Hashicorp의 Terraform과 같은 추상화된 Cloud Management Tool을 사용하는게 좋다.</description>
+    </item>
+    
+    <item>
+      <title>standard</title>
+      <link>https://keyolk.github.io/system/container/standard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/system/container/standard/</guid>
+      <description> Engine OCI Open Container Initiative
+https://www.opencontainers.org/
+APPC Application Container Basics
+https://github.com/appc/spec
+CNCF Clound Native Computing Foundtaion
+https://www.cncf.io/
+CRI-O Container Runtime Interface
+aka OCID, Open Container Initiative Daemon
+https://github.com/kubernetes-incubator/cri-o
+http://thenewstack.io/cri-o-make-kubernetes-center-container-ecosystem/
+Network CNI libnetwork </description>
+    </item>
+    
+  </channel>
+</rss>

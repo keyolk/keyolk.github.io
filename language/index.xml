@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Language on Personal Documentation</title>
+    <link>https://keyolk.github.io/language/</link>
+    <description>Recent content in Language on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 28 Sep 2017 15:15:25 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/language/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>functional programming</title>
+      <link>https://keyolk.github.io/language/functional_programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/language/functional_programming/</guid>
+      <description> Functional Programming  Immutability First-class, high-order functions Lazy evaluation  </description>
+    </item>
+    
+    <item>
+      <title>lambda</title>
+      <link>https://keyolk.github.io/language/lambda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/language/lambda/</guid>
+      <description>Lambda Calculus  Anonymous Function: 이름을 갖을 필요가 없다. Currying: 두 개 이상의 입력이 있는 함수는 최종적으로 1개의 입력만 받는 Lambda Calculus로 단순화 될 수 있다.  Lambda Function  Anonymous Function First-class Function  Labda Function &amp;amp; Lambda Expression IIFE Immediately Invoked Function Expression
+func(twoSeconds time.Duration) { // use twoSeconds }(time.Second * 2)  Closure  Free&amp;amp;Bound Variable Opend&amp;amp;Closed Expression  익명 함수가 함수 내 정의 되지 않은 변수를 참조하는 경우.</description>
+    </item>
+    
+    <item>
+      <title>regular expression</title>
+      <link>https://keyolk.github.io/language/regular_expression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/language/regular_expression/</guid>
+      <description> Type  Posix Rerular Expression  BRE: Basic Regular Expression ERE: Extened Regular Expression  PCRE: Perl Compatible Regular Expression  Posix Regular Expression  IEE std 1003.1            문자지정 . 임의의 문자 한개   반복 지정 ? 선행 문자 패턴이 0개 혹은 1개    + 선행 문자 패턴이 1개 이상 반복    * 선행 문자 패턴이 0개 이상 반복    {m, n} 반복수 지정   위치지정 ^ 라인의 앞부분    $ 라인의 끝부분   그룹 지정 [&amp;hellip;] 그룹 중 한 문자    [^&amp;hellip;] 그룹 내 문자들을 제외한 나머지   기타  escape    | OR    () pattern group    </description>
+    </item>
+    
+    <item>
+      <title>shellscript</title>
+      <link>https://keyolk.github.io/language/shellscript/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/language/shellscript/</guid>
+      <description>Parameter    variable Set and Not Null Set But Null Unset     ${parameter:-word} substitute parameter substitute word substitute word   ${parameter-word} substitute parameter substitute null substitute word   ${parameter:=word} substitute parameter assign word assign word   ${parameter=word} substitute parameter substitute null assign word   ${parameter:?word} substitute parameter error, exit error, exit   ${parameter?word} substitute parameter substitute null error, exit   ${parameter:+word} substitute word substitute null substitute null    Parameter Expansion  Case modification  ${var^} ${var^^} ${var,} ${var,,} ${var~} ${var~~}   Reference  http://pubs.</description>
+    </item>
+    
+  </channel>
+</rss>

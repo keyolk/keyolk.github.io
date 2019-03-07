@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithm on Personal Documentation</title>
+    <link>https://keyolk.github.io/algorithm/</link>
+    <description>Recent content in Algorithm on Personal Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 23 Jul 2018 23:44:56 +0900</lastBuildDate>
+    
+	<atom:link href="https://keyolk.github.io/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>algorithm pattern</title>
+      <link>https://keyolk.github.io/algorithm/algorithm_pattern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/algorithm_pattern/</guid>
+      <description> Intro  Backtracking Dynamic Programing Divide and Conquer Greedy Method  </description>
+    </item>
+    
+    <item>
+      <title>gc</title>
+      <link>https://keyolk.github.io/algorithm/gc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/gc/</guid>
+      <description>Referenche Counting 순환 참조 시 문제가 됨.
+Mark and Sweep root set을 두고 reference의 관계를 추적하면서 garbage를 수집.
+bitmap table이나 root object의 header에 reference에 대한 mark를 남김. 이를 통해 garbage 여부를 판단.
+Memory 파편화 위험이 있음.
+Mark and Compaction 파편화를 막기 위해 Compaction을 사용.
+Copying Heap을 Active/InActive로 나눠서 다룸.
+Generational Copying에서 더 나아가 보다 다양한 방식으로 sub heap을 나눠서 사용함. 각각 sub heap 마다 별개의 GC 방식 적용이 가능함.</description>
+    </item>
+    
+    <item>
+      <title>sorting</title>
+      <link>https://keyolk.github.io/algorithm/sorting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/sorting/</guid>
+      <description>Intro  Selection Bubble Merge Quick Heap  Merge /* C program for Merge Sort */ #include&amp;lt;stdlib.h&amp;gt; #include&amp;lt;stdio.h&amp;gt; // Merges two subarrays of arr[]. // First subarray is arr[l..m] // Second subarray is arr[m+1..r] void merge(int arr[], int l, int m, int r) { int i, j, k; int n1 = m - l + 1; int n2 = r - m; /* create temp arrays */ int L[n1], R[n2]; /* Copy data to temp arrays L[] and R[] */ for (i = 0; i &amp;lt; n1; i++) L[i] = arr[l + i]; for (j = 0; j &amp;lt; n2; j++) R[j] = arr[m + 1+ j]; /* Merge the temp arrays back into arr[l.</description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>https://keyolk.github.io/algorithm/network/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/network/</guid>
+      <description> Intro  Ford Fulkerson Bipartite Matching MCMF Hungarian Method  </description>
+    </item>
+    
+    <item>
+      <title>computational geometry</title>
+      <link>https://keyolk.github.io/algorithm/computational_geometry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/computational_geometry/</guid>
+      <description> Intro  Closest Pair  Line Sweeping  Farthest Pair  CCW Graham Scan Method Rotatin Calipers   </description>
+    </item>
+    
+    <item>
+      <title>string matching</title>
+      <link>https://keyolk.github.io/algorithm/string_matching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/string_matching/</guid>
+      <description> Intro  Knuth-Moriss-Pratt Aho-Corasick  </description>
+    </item>
+    
+    <item>
+      <title>mathematics</title>
+      <link>https://keyolk.github.io/algorithm/mathematics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/mathematics/</guid>
+      <description> Intro  Modulor Prime Number  Sieve of Eratosthenes  Prime Factorization Greatest Common Divisor  Euclid&amp;rsquo;s Algorithm  Least Common Multiplier Base Conversion Factorial Combination Permutation  </description>
+    </item>
+    
+    <item>
+      <title>etc</title>
+      <link>https://keyolk.github.io/algorithm/etc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keyolk.github.io/algorithm/etc/</guid>
+      <description> Intro Maximum Sum Sub Array  Kadane&amp;rsquo;s Algorithm  </description>
+    </item>
+    
+  </channel>
+</rss>
